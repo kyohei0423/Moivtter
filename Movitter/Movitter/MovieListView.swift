@@ -11,6 +11,13 @@ import UIKit
 class MovieListView: UIView {
     @IBOutlet weak var movieListTableView: UITableView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        let nib = UINib(nibName: "MovieListTableViewCell", bundle: nil)
+        movieListTableView.registerNib(nib, forCellReuseIdentifier: "MovieListTableViewCell")
+    }
+    
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         let nib = UINib(nibName: "MovieListTableViewCell", bundle: nil)
