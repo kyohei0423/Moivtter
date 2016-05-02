@@ -14,6 +14,11 @@ class MovieListViewController: UIViewController, UITableViewDelegate {
         let nib = UINib(nibName: "MovieListView", bundle: nil)
         view = nib.instantiateWithOwner(nil, options: nil).first as! MovieListView
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Post", style: .Plain, target: self, action: #selector(MovieListViewController.tapPostButton))
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +29,10 @@ class MovieListViewController: UIViewController, UITableViewDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tapPostButton() {
+        performSegueWithIdentifier("ModalSelectMovieViewController", sender: nil)
     }
     
 
