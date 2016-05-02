@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E288065C1CD7AE9A005E5838 /* movie.png in Resources */ = {isa = PBXBuildFile; fileRef = E288065B1CD7AE9A005E5838 /* movie.png */; };
+		E288065E1CD7B168005E5838 /* select.png in Resources */ = {isa = PBXBuildFile; fileRef = E288065D1CD7B168005E5838 /* select.png */; };
 		E2CD09921CD60390009CA778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD09911CD60390009CA778 /* AppDelegate.swift */; };
 		E2CD09971CD60390009CA778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CD09951CD60390009CA778 /* Main.storyboard */; };
 		E2CD09991CD60390009CA778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2CD09981CD60390009CA778 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E288065B1CD7AE9A005E5838 /* movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movie.png; sourceTree = "<group>"; };
+		E288065D1CD7B168005E5838 /* select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select.png; sourceTree = "<group>"; };
 		E2CD098E1CD60390009CA778 /* Movitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CD09911CD60390009CA778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2CD09961CD60390009CA778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,13 +73,15 @@
 		E2CD09901CD60390009CA778 /* Movitter */ = {
 			isa = PBXGroup;
 			children = (
+				E2CD09951CD60390009CA778 /* Main.storyboard */,
 				E28806561CD78FAB005E5838 /* NavigationController */,
 				E2CD09A31CD6147D009CA778 /* MovieList */,
 				E2CD09911CD60390009CA778 /* AppDelegate.swift */,
-				E2CD09951CD60390009CA778 /* Main.storyboard */,
 				E2CD09981CD60390009CA778 /* Assets.xcassets */,
 				E2CD099A1CD60390009CA778 /* LaunchScreen.storyboard */,
 				E2CD099D1CD60390009CA778 /* Info.plist */,
+				E288065B1CD7AE9A005E5838 /* movie.png */,
+				E288065D1CD7B168005E5838 /* select.png */,
 			);
 			path = Movitter;
 			sourceTree = "<group>";
@@ -169,6 +175,8 @@
 			files = (
 				E2CD09AF1CD616E4009CA778 /* MovieListTableViewCell.xib in Resources */,
 				E2CD099C1CD60390009CA778 /* LaunchScreen.storyboard in Resources */,
+				E288065C1CD7AE9A005E5838 /* movie.png in Resources */,
+				E288065E1CD7B168005E5838 /* select.png in Resources */,
 				E2CD09A51CD61493009CA778 /* MovieListView.xib in Resources */,
 				E2CD09991CD60390009CA778 /* Assets.xcassets in Resources */,
 				E2CD09971CD60390009CA778 /* Main.storyboard in Resources */,
