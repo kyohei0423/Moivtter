@@ -43,6 +43,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E28806561CD78FAB005E5838 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NavigationController;
+			sourceTree = "<group>";
+		};
 		E2CD09851CD60390009CA778 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +69,7 @@
 		E2CD09901CD60390009CA778 /* Movitter */ = {
 			isa = PBXGroup;
 			children = (
+				E28806561CD78FAB005E5838 /* NavigationController */,
 				E2CD09A31CD6147D009CA778 /* MovieList */,
 				E2CD09911CD60390009CA778 /* AppDelegate.swift */,
 				E2CD09951CD60390009CA778 /* Main.storyboard */,
@@ -327,6 +335,7 @@
 				E2CD09A21CD60390009CA778 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

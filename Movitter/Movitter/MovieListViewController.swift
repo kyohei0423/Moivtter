@@ -8,12 +8,17 @@
 
 import UIKit
 
-class MovieListViewController: UIViewController {
+class MovieListViewController: UIViewController, UITableViewDelegate {
+    
+    override func loadView() {
+        let nib = UINib(nibName: "MovieListView", bundle: nil)
+        view = nib.instantiateWithOwner(nil, options: nil).first as! MovieListView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let movieListView = view as! MovieListView
+        movieListView.movieListTableView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
