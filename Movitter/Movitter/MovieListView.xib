@@ -23,6 +23,9 @@
                 <constraint firstAttribute="bottom" secondItem="yjc-QM-nPN" secondAttribute="bottom" id="HoC-Lo-8B4"/>
                 <constraint firstItem="yjc-QM-nPN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KG3-jd-2CA"/>
             </constraints>
+            <connections>
+                <outlet property="movieListTableView" destination="yjc-QM-nPN" id="Rqs-j0-gN3"/>
+            </connections>
         </view>
     </objects>
 </document>

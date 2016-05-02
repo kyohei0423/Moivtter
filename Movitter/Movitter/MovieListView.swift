@@ -9,13 +9,11 @@
 import UIKit
 
 class MovieListView: UIView {
-
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
+    @IBOutlet weak var movieListTableView: UITableView!
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        let nib = UINib(nibName: "MovieListTableViewCell", bundle: nil)
+        movieListTableView.registerNib(nib, forCellReuseIdentifier: "MovieListTableViewCell")
     }
-    */
-
 }
