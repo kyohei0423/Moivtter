@@ -11,8 +11,7 @@ import UIKit
 class MovieListViewController: UIViewController, UITableViewDelegate {
     
     override func loadView() {
-        let nib = UINib(nibName: "MovieListView", bundle: nil)
-        view = nib.instantiateWithOwner(nil, options: nil).first as! MovieListView
+        view = UINib.instantiateFirstView("MovieListView")
     }
     
     override func viewWillAppear(animated: Bool) {

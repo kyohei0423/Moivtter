@@ -13,8 +13,7 @@ class MovieListView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        let nib = UINib(nibName: "MovieListTableViewCell", bundle: nil)
-        movieListTableView.registerNib(nib, forCellReuseIdentifier: "MovieListTableViewCell")
+        movieListTableView.registerCell("MovieListTableViewCell")
     }
     
     
