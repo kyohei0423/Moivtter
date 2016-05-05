@@ -30,7 +30,7 @@
         <!--Movie-->
         <scene sceneID="0xh-Hr-6hQ">
             <objects>
-                <viewController id="6BL-pn-Y77" sceneMemberID="viewController">
+                <viewController id="6BL-pn-Y77" customClass="TakeMovieViewController" customModule="Movitter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KDu-MV-ljV"/>
                         <viewControllerLayoutGuide type="bottom" id="Rcm-DJ-DGH"/>
