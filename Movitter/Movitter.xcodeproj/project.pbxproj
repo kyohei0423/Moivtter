@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E25C273D1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273A1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png */; };
+		E25C273E1CDDF0E8003C7C87 /* ShutterButton1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273B1CDDF0E8003C7C87 /* ShutterButton1@2x.png */; };
+		E25C273F1CDDF0E8003C7C87 /* outer2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */; };
 		E288065C1CD7AE9A005E5838 /* movie.png in Resources */ = {isa = PBXBuildFile; fileRef = E288065B1CD7AE9A005E5838 /* movie.png */; };
 		E288065E1CD7B168005E5838 /* select.png in Resources */ = {isa = PBXBuildFile; fileRef = E288065D1CD7B168005E5838 /* select.png */; };
 		E2AC89651CD996C400B40234 /* UINib+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC89641CD996C400B40234 /* UINib+Extension.swift */; };
@@ -14,6 +17,7 @@
 		E2AC896A1CDAFA6D00B40234 /* TakeMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC89691CDAFA6D00B40234 /* TakeMovieViewController.swift */; };
 		E2AC896C1CDAFA9100B40234 /* TakeMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC896B1CDAFA9100B40234 /* TakeMovieView.swift */; };
 		E2AC896F1CDAFAAB00B40234 /* TakeMovieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2AC896E1CDAFAAB00B40234 /* TakeMovieView.xib */; };
+		E2AC89711CDB110200B40234 /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC89701CDB110200B40234 /* MovieManager.swift */; };
 		E2CD09921CD60390009CA778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD09911CD60390009CA778 /* AppDelegate.swift */; };
 		E2CD09971CD60390009CA778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CD09951CD60390009CA778 /* Main.storyboard */; };
 		E2CD09991CD60390009CA778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2CD09981CD60390009CA778 /* Assets.xcassets */; };
@@ -26,13 +30,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E288065B1CD7AE9A005E5838 /* movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movie.png; sourceTree = "<group>"; };
-		E288065D1CD7B168005E5838 /* select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select.png; sourceTree = "<group>"; };
+		E25C273A1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutterButtonStop@2x.png"; sourceTree = "<group>"; };
+		E25C273B1CDDF0E8003C7C87 /* ShutterButton1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutterButton1@2x.png"; sourceTree = "<group>"; };
+		E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "outer2@2x.png"; sourceTree = "<group>"; };
+		E288065B1CD7AE9A005E5838 /* movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = movie.png; path = Movitter/movie.png; sourceTree = "<group>"; };
+		E288065D1CD7B168005E5838 /* select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = select.png; path = Movitter/select.png; sourceTree = "<group>"; };
 		E2AC89641CD996C400B40234 /* UINib+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINib+Extension.swift"; sourceTree = "<group>"; };
 		E2AC89661CD99DFE00B40234 /* TableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView+Extension.swift"; sourceTree = "<group>"; };
 		E2AC89691CDAFA6D00B40234 /* TakeMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeMovieViewController.swift; sourceTree = "<group>"; };
 		E2AC896B1CDAFA9100B40234 /* TakeMovieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeMovieView.swift; sourceTree = "<group>"; };
 		E2AC896E1CDAFAAB00B40234 /* TakeMovieView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TakeMovieView.xib; sourceTree = "<group>"; };
+		E2AC89701CDB110200B40234 /* MovieManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
 		E2CD098E1CD60390009CA778 /* Movitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CD09911CD60390009CA778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2CD09961CD60390009CA778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +65,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E25C27391CDDF0C5003C7C87 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E288065B1CD7AE9A005E5838 /* movie.png */,
+				E288065D1CD7B168005E5838 /* select.png */,
+				E25C273A1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png */,
+				E25C273B1CDDF0E8003C7C87 /* ShutterButton1@2x.png */,
+				E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		E28806561CD78FAB005E5838 /* NavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +107,7 @@
 			children = (
 				E2AC896B1CDAFA9100B40234 /* TakeMovieView.swift */,
 				E2AC896E1CDAFAAB00B40234 /* TakeMovieView.xib */,
+				E2AC89701CDB110200B40234 /* MovieManager.swift */,
 			);
 			name = TakeMovieView;
 			sourceTree = "<group>";
@@ -96,6 +117,7 @@
 			children = (
 				E2CD09901CD60390009CA778 /* Movitter */,
 				E2CD098F1CD60390009CA778 /* Products */,
+				E25C27391CDDF0C5003C7C87 /* images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,8 +141,6 @@
 				E2CD09981CD60390009CA778 /* Assets.xcassets */,
 				E2CD099A1CD60390009CA778 /* LaunchScreen.storyboard */,
 				E2CD099D1CD60390009CA778 /* Info.plist */,
-				E288065B1CD7AE9A005E5838 /* movie.png */,
-				E288065D1CD7B168005E5838 /* select.png */,
 			);
 			path = Movitter;
 			sourceTree = "<group>";
@@ -217,8 +237,11 @@
 				E2AC896F1CDAFAAB00B40234 /* TakeMovieView.xib in Resources */,
 				E288065C1CD7AE9A005E5838 /* movie.png in Resources */,
 				E288065E1CD7B168005E5838 /* select.png in Resources */,
+				E25C273D1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png in Resources */,
 				E2CD09A51CD61493009CA778 /* MovieListView.xib in Resources */,
+				E25C273F1CDDF0E8003C7C87 /* outer2@2x.png in Resources */,
 				E2CD09991CD60390009CA778 /* Assets.xcassets in Resources */,
+				E25C273E1CDDF0E8003C7C87 /* ShutterButton1@2x.png in Resources */,
 				E2CD09971CD60390009CA778 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +260,7 @@
 				E2CD09AE1CD616E4009CA778 /* MovieListTableViewCell.swift in Sources */,
 				E2AC89651CD996C400B40234 /* UINib+Extension.swift in Sources */,
 				E2AC896C1CDAFA9100B40234 /* TakeMovieView.swift in Sources */,
+				E2AC89711CDB110200B40234 /* MovieManager.swift in Sources */,
 				E2CD09A71CD614A2009CA778 /* MovieListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Movitter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seokyohei.Movitter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,6 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Movitter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seokyohei.Movitter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
