@@ -22,8 +22,6 @@ class MovieManager: NSObject {
     //レコード中かどうか
     var isRecording = false
 
-    var sessionQueue: dispatch_queue_t?
-
     //カメラロールへのアクセスの許可の有無を確認する
     func checkAuthorization(callback: Bool -> ()) {
         switch AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo) {
