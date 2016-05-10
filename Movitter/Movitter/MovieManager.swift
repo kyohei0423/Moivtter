@@ -58,10 +58,9 @@ class MovieManager: NSObject {
             let saveAlbum = PHAssetCollectionChangeRequest(forAssetCollection: assetAlbum)
             saveAlbum?.addAssets([assetPlaceholder] as! NSFastEnumeration)
         }) { (success, error) -> Void in
-            if success {
-                print("success")
-            } else {
+            guard success else {
                 print(error)
+                return
             }
         }
     }
