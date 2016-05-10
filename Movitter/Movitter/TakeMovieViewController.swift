@@ -12,7 +12,6 @@ import Photos
 
 class TakeMovieViewController: UIViewController, AVCaptureFileOutputRecordingDelegate {
     var movieManager: MovieManager!
-    var isRecording: Bool!
     
     override func loadView() {
         super.loadView()
