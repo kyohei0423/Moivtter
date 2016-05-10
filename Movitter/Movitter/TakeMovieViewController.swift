@@ -23,12 +23,6 @@ class TakeMovieViewController: UIViewController, AVCaptureFileOutputRecordingDel
         let takeMovieView = view as! TakeMovieView
         takeMovieView.recordButton.addTarget(self, action: #selector(TakeMovieViewController.tapRecordButton), forControlEvents: .TouchUpInside)
     }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        isRecording = false
-    }
-    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         movieManager.checkAuthorization(setUpCameraOrShowAlert)
