@@ -11,8 +11,8 @@ import AVFoundation
 import Photos
 
 class TakeMovieViewController: UIViewController, AVCaptureFileOutputRecordingDelegate {
-    var movieManager: MovieManager!
-    
+    var movieManager = MovieManager()
+
     override func loadView() {
         super.loadView()
         view = UINib.instantiateFirstView("TakeMovieView")
@@ -31,7 +31,6 @@ class TakeMovieViewController: UIViewController, AVCaptureFileOutputRecordingDel
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        movieManager = MovieManager()
         movieManager.checkAuthorization(setUpCameraOrShowAlert)
     }
 
