@@ -42,11 +42,29 @@ class MovieManager: NSObject {
         session?.stopRunning()
     }
     
+    func recordOrStop(delegate: AVCaptureFileOutputRecordingDelegate) {
+        guard let output = output else { return }
+        if isRecording {
+            //録画を停止する
+            output.stopRecording()
+            //録画中でなくする
+            isRecording = false
+        } else {
+            let path = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+            let documentsDirectory = path[0]
+            let filePath: String = "\(documentsDirectory)/temp.mp4"
+            let fileURL: NSURL = NSURL(fileURLWithPath: filePath)
+            output.startRecordingToOutputFileURL(fileURL, recordingDelegate: delegate)
+            //録画中にする
+            isRecording = true
+        }
+    }
+
     func finishRecord(outputFile: NSURL) {
         PHPhotoLibrary.sharedPhotoLibrary().performChanges({ () -> Void in
             let list = PHAssetCollection.fetchAssetCollectionsWithType(PHAssetCollectionType.Album, subtype: PHAssetCollectionSubtype.Any, options: nil)
             var assetAlbum = PHAssetCollection()
-            
+
             list.enumerateObjectsUsingBlock { (album, index, isStop) -> Void in
                 if album.localizedTitle == "video" {
                     assetAlbum = album as! PHAssetCollection
