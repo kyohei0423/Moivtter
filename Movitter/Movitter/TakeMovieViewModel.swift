@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import Photos
 
-class MovieManager: NSObject {
+class TakeMovieViewModel: NSObject {
     //データの入力と出力を管理する
     var session: AVCaptureSession?
     //使用するデバイスを指定（フロントカメラ・バックカメラ）

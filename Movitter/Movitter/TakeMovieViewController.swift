@@ -11,7 +11,7 @@ import AVFoundation
 import Photos
 
 class TakeMovieViewController: UIViewController, AVCaptureFileOutputRecordingDelegate {
-    var movieManager = MovieManager()
+    var takeMovieViewModel = TakeMovieViewModel()
 
     override func loadView() {
         super.loadView()
@@ -26,7 +26,7 @@ class TakeMovieViewController: UIViewController, AVCaptureFileOutputRecordingDel
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        movieManager.checkAuthorization(setUpCameraOrShowAlert)
+        takeMovieViewModel.checkAuthorization(setUpCameraOrShowAlert)
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,10 +37,10 @@ class TakeMovieViewController: UIViewController, AVCaptureFileOutputRecordingDel
     func setUpCameraOrShowAlert(result: Bool) {
         if result {
             let takeMovieView = view as! TakeMovieView
-            movieManager.setUPCamera()
-            if let session = movieManager.session {
+            takeMovieViewModel.setUPCamera()
+            if let session = takeMovieViewModel.session {
                 takeMovieView.drawCaptureView(session)
-                movieManager.begin()
+                takeMovieViewModel.begin()
             }
         } else {
             moveSettingApp()
@@ -49,8 +49,8 @@ class TakeMovieViewController: UIViewController, AVCaptureFileOutputRecordingDel
 
     func tapRecordButton() {
         let takeMovieView = view as! TakeMovieView
-        movieManager.recordOrStop(self)
-        if movieManager.isRecording {
+        takeMovieViewModel.recordOrStop(self)
+        if takeMovieViewModel.isRecording {
             takeMovieView.recordButton.setImage(UIImage(named: "ShutterButtonStop"), forState: .Normal)
         } else {
             takeMovieView.recordButton.setImage(UIImage(named: "ShutterButton1"), forState: .Normal)
@@ -58,7 +58,7 @@ class TakeMovieViewController: UIViewController, AVCaptureFileOutputRecordingDel
     }
 
     func captureOutput(captureOutput: AVCaptureFileOutput!, didFinishRecordingToOutputFileAtURL outputFileURL: NSURL!, fromConnections connections: [AnyObject]!, error: NSError!) {
-        movieManager.finishRecord(outputFileURL)
+        takeMovieViewModel.finishRecord(outputFileURL)
     }
 
 
