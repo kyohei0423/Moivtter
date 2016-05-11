@@ -17,7 +17,7 @@
 		E2AC896A1CDAFA6D00B40234 /* TakeMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC89691CDAFA6D00B40234 /* TakeMovieViewController.swift */; };
 		E2AC896C1CDAFA9100B40234 /* TakeMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC896B1CDAFA9100B40234 /* TakeMovieView.swift */; };
 		E2AC896F1CDAFAAB00B40234 /* TakeMovieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2AC896E1CDAFAAB00B40234 /* TakeMovieView.xib */; };
-		E2AC89711CDB110200B40234 /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC89701CDB110200B40234 /* MovieManager.swift */; };
+		E2AC89711CDB110200B40234 /* TakeMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC89701CDB110200B40234 /* TakeMovieViewModel.swift */; };
 		E2CD09921CD60390009CA778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD09911CD60390009CA778 /* AppDelegate.swift */; };
 		E2CD09971CD60390009CA778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CD09951CD60390009CA778 /* Main.storyboard */; };
 		E2CD09991CD60390009CA778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2CD09981CD60390009CA778 /* Assets.xcassets */; };
@@ -40,7 +40,7 @@
 		E2AC89691CDAFA6D00B40234 /* TakeMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeMovieViewController.swift; sourceTree = "<group>"; };
 		E2AC896B1CDAFA9100B40234 /* TakeMovieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeMovieView.swift; sourceTree = "<group>"; };
 		E2AC896E1CDAFAAB00B40234 /* TakeMovieView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TakeMovieView.xib; sourceTree = "<group>"; };
-		E2AC89701CDB110200B40234 /* MovieManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
+		E2AC89701CDB110200B40234 /* TakeMovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeMovieViewModel.swift; sourceTree = "<group>"; };
 		E2CD098E1CD60390009CA778 /* Movitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CD09911CD60390009CA778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2CD09961CD60390009CA778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 			children = (
 				E2AC896B1CDAFA9100B40234 /* TakeMovieView.swift */,
 				E2AC896E1CDAFAAB00B40234 /* TakeMovieView.xib */,
-				E2AC89701CDB110200B40234 /* MovieManager.swift */,
+				E2AC89701CDB110200B40234 /* TakeMovieViewModel.swift */,
 			);
 			name = TakeMovieView;
 			sourceTree = "<group>";
@@ -260,7 +260,7 @@
 				E2CD09AE1CD616E4009CA778 /* MovieListTableViewCell.swift in Sources */,
 				E2AC89651CD996C400B40234 /* UINib+Extension.swift in Sources */,
 				E2AC896C1CDAFA9100B40234 /* TakeMovieView.swift in Sources */,
-				E2AC89711CDB110200B40234 /* MovieManager.swift in Sources */,
+				E2AC89711CDB110200B40234 /* TakeMovieViewModel.swift in Sources */,
 				E2CD09A71CD614A2009CA778 /* MovieListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
