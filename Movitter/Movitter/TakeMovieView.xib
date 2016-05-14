@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TakeMovieView" customModule="Movitter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huh-kg-qlk">
+                    <rect key="frame" x="0.0" y="399" width="600" height="201"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="outer2.png" translatesAutoresizingMaskIntoConstraints="NO" id="mhc-Xa-0sY">
+                            <rect key="frame" x="267" y="68" width="66" height="66"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="66" id="Mnb-Ux-cFZ"/>
+                                <constraint firstAttribute="height" constant="66" id="RZO-Xw-M42"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o82-rF-Gif">
+                            <rect key="frame" x="260" y="71" width="80" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="4Lu-5W-r4s"/>
+                                <constraint firstAttribute="height" constant="60" id="McS-am-irR"/>
+                            </constraints>
+                            <state key="normal" image="ShutterButton1.png"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.83756353632174496" green="0.87883829288120818" blue="0.15633060269127511" alpha="0.80172413793103448" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="mhc-Xa-0sY" firstAttribute="centerX" secondItem="huh-kg-qlk" secondAttribute="centerX" id="7jq-vo-98A"/>
+                        <constraint firstItem="o82-rF-Gif" firstAttribute="centerX" secondItem="huh-kg-qlk" secondAttribute="centerX" id="9as-rN-5hF"/>
+                        <constraint firstItem="o82-rF-Gif" firstAttribute="centerY" secondItem="huh-kg-qlk" secondAttribute="centerY" id="Jy6-pY-5wq"/>
+                        <constraint firstItem="mhc-Xa-0sY" firstAttribute="centerY" secondItem="huh-kg-qlk" secondAttribute="centerY" id="o0F-Vm-gsE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bth-hh-Idh">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="399"/>
+                    <color key="backgroundColor" red="0.43137258290000002" green="0.55294120309999995" blue="0.8980392814" alpha="0.82271012931034482" colorSpace="deviceRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="huh-kg-qlk" secondAttribute="bottom" id="8oh-1C-lH8"/>
+                <constraint firstItem="bth-hh-Idh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MrX-3u-5Cj"/>
+                <constraint firstAttribute="trailing" secondItem="huh-kg-qlk" secondAttribute="trailing" id="OLb-st-6vf"/>
+                <constraint firstItem="huh-kg-qlk" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1 / 3" constant="1" id="T2d-Il-MQz"/>
+                <constraint firstItem="bth-hh-Idh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Wrw-Yi-v8z"/>
+                <constraint firstItem="huh-kg-qlk" firstAttribute="top" secondItem="bth-hh-Idh" secondAttribute="bottom" id="deE-Vj-QjB"/>
+                <constraint firstAttribute="trailing" secondItem="bth-hh-Idh" secondAttribute="trailing" id="iGn-V6-hw7"/>
+                <constraint firstItem="huh-kg-qlk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qgW-Dh-cBC"/>
+            </constraints>
+            <connections>
+                <outlet property="captureView" destination="bth-hh-Idh" id="kXA-IR-4am"/>
+                <outlet property="recordButton" destination="o82-rF-Gif" id="8Uj-fN-3fk"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="ShutterButton1.png" width="50" height="50"/>
+        <image name="outer2.png" width="66" height="66"/>
+    </resources>
+</document>
