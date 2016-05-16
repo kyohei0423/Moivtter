@@ -10,12 +10,26 @@ import UIKit
 
 class CollectionMovieView: UIView {
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
+    let flowLayout = UICollectionViewFlowLayout()
+
+    @IBOutlet weak var previewMovieView: UIView!
+    @IBOutlet weak var movieCollectionView: UICollectionView!
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+        movieCollectionView.registerCell("MovieCollectionViewCell")
     }
-    */
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+
+        flowLayout.setCollectionViewLayout(self.frame.width)
+        collectionViewSettings()
+    }
+
+    func collectionViewSettings() {
+        self.movieCollectionView.backgroundColor = UIColor.whiteColor()
+    }
 
 }
