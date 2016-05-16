@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="2491" y="-77"/>
         </scene>
-        <!--View Controller-->
+        <!--Collection Movie View Controller-->
         <scene sceneID="fBq-bL-jwZ">
             <objects>
-                <viewController id="vLo-XC-mr8" sceneMemberID="viewController">
+                <viewController id="vLo-XC-mr8" customClass="CollectionMovieViewController" customModule="Movitter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aLx-Le-Njf"/>
                         <viewControllerLayoutGuide type="bottom" id="I0e-B1-Dg9"/>
