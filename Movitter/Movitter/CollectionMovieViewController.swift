@@ -25,7 +25,6 @@ class CollectionMovieViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         collectionMovieVIewModel.checkAuthorization(setUpCameraroll)
-        print("hoge")
     }
 
     override func didReceiveMemoryWarning() {
