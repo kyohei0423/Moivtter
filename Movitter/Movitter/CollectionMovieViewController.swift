@@ -9,6 +9,7 @@
 import UIKit
 
 class CollectionMovieViewController: UIViewController {
+    let collectionMovieVIewModel = CollectionMovieVIewModel()
     
     override func loadView() {
         super.loadView()
@@ -20,10 +21,37 @@ class CollectionMovieViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        collectionMovieVIewModel.checkAuthorization(setUpCameraroll)
+        print("hoge")
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setUpCameraroll(result: Bool) {
+        if result {
+            let collectionMovieView = view as! CollectionMovieView
+            collectionMovieVIewModel.getMovies()
+        } else {
+            moveSettingApp()
+        }
+    }
+    
+    private func moveSettingApp() {
+        let alertController = UIAlertController(title: "カメラロールへのアクセスが許可されていません", message: "設定アプリからカメラロールへのアクセスを許可してください", preferredStyle: .Alert)
+        let action = UIAlertAction(title: "設定する", style: .Default) { (_) in
+            let settingURL = NSURL(string: UIApplicationOpenSettingsURLString)
+            if let settingURL = settingURL {
+                UIApplication.sharedApplication().openURL(settingURL)
+            }
+        }
+        alertController.addAction(action)
+        presentViewController(alertController, animated: true, completion: nil)
     }
     
 
