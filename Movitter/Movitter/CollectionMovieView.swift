@@ -25,6 +25,7 @@ class CollectionMovieView: UIView {
         super.layoutSubviews()
 
         flowLayout.setCollectionViewLayout(self.frame.width)
+        movieCollectionView.collectionViewLayout = flowLayout
         collectionViewSettings()
     }
 
