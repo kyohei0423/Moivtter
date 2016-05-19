@@ -29,7 +29,7 @@ class CollectionMovieViewModel: NSObject, UICollectionViewDataSource {
             })
         }
     }
-    
+
     //動画を取得
     func getMovies() {
         let options = PHFetchOptions()
@@ -56,7 +56,6 @@ class CollectionMovieViewModel: NSObject, UICollectionViewDataSource {
 
     //DataSource
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(avAssets.count)
         return avAssets.count
     }
 
@@ -65,7 +64,6 @@ class CollectionMovieViewModel: NSObject, UICollectionViewDataSource {
         let asset = self.avAssets[indexPath.row]
         let imageGenerator = AVAssetImageGenerator(asset: asset)
         let capturePoint = CMTimeMakeWithSeconds(0.0, 600)
-        print(capturePoint)
         do {
             let captureImage = try imageGenerator.copyCGImageAtTime(capturePoint, actualTime: nil)
             cell.captureImageView.image = UIImage(CGImage: captureImage)
