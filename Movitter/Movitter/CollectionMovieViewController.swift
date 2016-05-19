@@ -43,12 +43,14 @@ class CollectionMovieViewController: UIViewController, UICollectionViewDelegate 
                 print("getMovies")
             })
             dispatch_group_async(dispatchGroup, queue, { 
-                self.collectionMovieViewModel.changeAsset()
-                print("changeAsset")
+                self.collectionMovieViewModel.changeAsset({
+                    dispatch_async(dispatch_get_main_queue(), { 
+                        let collectionMovieView = self.view as! CollectionMovieView
+                        collectionMovieView.movieCollectionView.reloadData()
+                    })
+                })
             })
             dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), {
-                let collectionMovieView = self.view as! CollectionMovieView
-                collectionMovieView.movieCollectionView.reloadData()
             })
         } else {
             moveSettingApp()

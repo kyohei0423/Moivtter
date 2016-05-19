@@ -43,13 +43,13 @@ class CollectionMovieViewModel: NSObject, UICollectionViewDataSource {
     }
 
     //PHAssetからAVAssetに変換し配列に格納
-    func changeAsset() {
+    func changeAsset(callback: Void -> ()) {
         for phAsset in phAssets {
             let manager = PHImageManager()
             manager.requestAVAssetForVideo(phAsset, options: nil) { (avAsset, avAudioMix, info) in
                 guard let avAsset =  avAsset else { return }
                 self.avAssets.append(avAsset)
-                print(self.avAssets.count)
+                callback()
             }
         }
     }
@@ -64,10 +64,12 @@ class CollectionMovieViewModel: NSObject, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("MovieCollectionViewCell", forIndexPath: indexPath) as! MovieCollectionViewCell
         let asset = self.avAssets[indexPath.row]
         let imageGenerator = AVAssetImageGenerator(asset: asset)
-        let capturePoint = CMTimeMakeWithSeconds(0, 0)
+        let capturePoint = CMTimeMakeWithSeconds(0.0, 600)
+        print(capturePoint)
         do {
             let captureImage = try imageGenerator.copyCGImageAtTime(capturePoint, actualTime: nil)
             cell.captureImageView.image = UIImage(CGImage: captureImage)
+            print(cell.captureImageView.image)
         } catch let error {
             print(error)
         }
