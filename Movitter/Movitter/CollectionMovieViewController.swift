@@ -8,9 +8,10 @@
 
 import UIKit
 
-class CollectionMovieViewController: UIViewController {
-    let collectionMovieVIewModel = CollectionMovieVIewModel()
-    
+class CollectionMovieViewController: UIViewController, UICollectionViewDelegate {
+
+    let collectionMovieViewModel = CollectionMovieViewModel()
+
     override func loadView() {
         super.loadView()
         view = UINib.instantiateFirstView("CollectionMovieView")
@@ -18,29 +19,42 @@ class CollectionMovieViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let collectionMovieView = view as! CollectionMovieView
+        collectionMovieView.movieCollectionView.delegate = self
+        collectionMovieView.movieCollectionView.dataSource = collectionMovieViewModel
     }
-    
+
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        collectionMovieVIewModel.checkAuthorization(setUpCameraroll)
+        collectionMovieViewModel.checkAuthorization(setUpCameraroll)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     func setUpCameraroll(result: Bool) {
         if result {
-            let collectionMovieView = view as! CollectionMovieView
-            collectionMovieVIewModel.getMovies()
+            let queue = dispatch_queue_create(nil, DISPATCH_QUEUE_SERIAL)
+            let dispatchGroup = dispatch_group_create()
+            dispatch_group_async(dispatchGroup, queue, { 
+                self.collectionMovieViewModel.getMovies()
+                print("getMovies")
+            })
+            dispatch_group_async(dispatchGroup, queue, { 
+                self.collectionMovieViewModel.changeAsset()
+                print("changeAsset")
+            })
+            dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), {
+                let collectionMovieView = self.view as! CollectionMovieView
+                collectionMovieView.movieCollectionView.reloadData()
+            })
         } else {
             moveSettingApp()
         }
     }
-    
+
     private func moveSettingApp() {
         let alertController = UIAlertController(title: "カメラロールへのアクセスが許可されていません", message: "設定アプリからカメラロールへのアクセスを許可してください", preferredStyle: .Alert)
         let action = UIAlertAction(title: "設定する", style: .Default) { (_) in
@@ -52,7 +66,7 @@ class CollectionMovieViewController: UIViewController {
         alertController.addAction(action)
         presentViewController(alertController, animated: true, completion: nil)
     }
-    
+
 
     /*
     // MARK: - Navigation

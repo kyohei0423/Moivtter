@@ -25,7 +25,7 @@
 		E2BAB9BF1CE9EC9600156708 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAB9BE1CE9EC9600156708 /* UICollectionView+Extension.swift */; };
 		E2BAB9C31CE9F66200156708 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAB9C11CE9F66200156708 /* MovieCollectionViewCell.swift */; };
 		E2BAB9C41CE9F66200156708 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BAB9C21CE9F66200156708 /* MovieCollectionViewCell.xib */; };
-		E2BAB9C61CEA059100156708 /* CollectionMovieVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAB9C51CEA059100156708 /* CollectionMovieVIewModel.swift */; };
+		E2BAB9C61CEA059100156708 /* CollectionMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAB9C51CEA059100156708 /* CollectionMovieViewModel.swift */; };
 		E2CD09921CD60390009CA778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD09911CD60390009CA778 /* AppDelegate.swift */; };
 		E2CD09971CD60390009CA778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CD09951CD60390009CA778 /* Main.storyboard */; };
 		E2CD09991CD60390009CA778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2CD09981CD60390009CA778 /* Assets.xcassets */; };
@@ -56,7 +56,7 @@
 		E2BAB9BE1CE9EC9600156708 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		E2BAB9C11CE9F66200156708 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		E2BAB9C21CE9F66200156708 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
-		E2BAB9C51CEA059100156708 /* CollectionMovieVIewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionMovieVIewModel.swift; sourceTree = "<group>"; };
+		E2BAB9C51CEA059100156708 /* CollectionMovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionMovieViewModel.swift; sourceTree = "<group>"; };
 		E2CD098E1CD60390009CA778 /* Movitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CD09911CD60390009CA778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2CD09961CD60390009CA778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,7 +135,8 @@
 			children = (
 				E2BAB9C01CE9F61B00156708 /* MovieCollectionViewCell */,
 				E2BAB9B51CE9E16300156708 /* CollectionMovieView */,
-				E2BAB9C51CEA059100156708 /* CollectionMovieVIewModel.swift */,
+				E2BAB9C51CEA059100156708 /* CollectionMovieViewModel.swift */,
+				E2BAB9BA1CE9E20200156708 /* CollectionMovieViewController.swift */,
 			);
 			name = CollectionMovie;
 			sourceTree = "<group>";
@@ -184,7 +185,6 @@
 				E2CD09A31CD6147D009CA778 /* MovieList */,
 				E2AC89681CDAFA4900B40234 /* TakeMovie */,
 				E2BAB9B41CE9E0F600156708 /* CollectionMovie */,
-				E2BAB9BA1CE9E20200156708 /* CollectionMovieViewController.swift */,
 				E2CD09911CD60390009CA778 /* AppDelegate.swift */,
 				E2CD09981CD60390009CA778 /* Assets.xcassets */,
 				E2CD099A1CD60390009CA778 /* LaunchScreen.storyboard */,
@@ -307,7 +307,7 @@
 				E2CD09A91CD614B3009CA778 /* MovieListViewController.swift in Sources */,
 				E2AC89671CD99DFE00B40234 /* TableView+Extension.swift in Sources */,
 				E2CD09921CD60390009CA778 /* AppDelegate.swift in Sources */,
-				E2BAB9C61CEA059100156708 /* CollectionMovieVIewModel.swift in Sources */,
+				E2BAB9C61CEA059100156708 /* CollectionMovieViewModel.swift in Sources */,
 				E2BAB9BD1CE9EA0300156708 /* UICollectionViewFlowLayout+Extension.swift in Sources */,
 				E2CD09AE1CD616E4009CA778 /* MovieListTableViewCell.swift in Sources */,
 				E2BAB9BF1CE9EC9600156708 /* UICollectionView+Extension.swift in Sources */,
