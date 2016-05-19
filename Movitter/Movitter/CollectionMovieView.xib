@@ -39,7 +39,7 @@
             </constraints>
             <connections>
                 <outlet property="movieCollectionView" destination="QtC-Mq-h2P" id="Dkv-6K-VDf"/>
-                <outlet property="previewMovieView" destination="MB6-Rs-VQz" id="J4N-7D-lhL"/>
+                <outlet property="playMovieView" destination="MB6-Rs-VQz" id="8Oz-CH-LCa"/>
             </connections>
         </view>
     </objects>

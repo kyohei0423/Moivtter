@@ -67,7 +67,6 @@ class CollectionMovieViewModel: NSObject, UICollectionViewDataSource {
         do {
             let captureImage = try imageGenerator.copyCGImageAtTime(capturePoint, actualTime: nil)
             cell.captureImageView.image = UIImage(CGImage: captureImage)
-            print(cell.captureImageView.image)
         } catch let error {
             print(error)
         }

@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CollectionMovieViewController: UIViewController, UICollectionViewDelegate {
 
     let collectionMovieViewModel = CollectionMovieViewModel()
+    var selectedAssets: AVAsset?
 
     override func loadView() {
         super.loadView()
@@ -40,7 +42,6 @@ class CollectionMovieViewController: UIViewController, UICollectionViewDelegate 
             let dispatchGroup = dispatch_group_create()
             dispatch_group_async(dispatchGroup, queue, { 
                 self.collectionMovieViewModel.getMovies()
-                print("getMovies")
             })
             dispatch_group_async(dispatchGroup, queue, { 
                 self.collectionMovieViewModel.changeAsset({
@@ -67,6 +68,13 @@ class CollectionMovieViewController: UIViewController, UICollectionViewDelegate 
         }
         alertController.addAction(action)
         presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    //delegate
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        selectedAssets = self.collectionMovieViewModel.avAssets[indexPath.row]
+        let collectionMovieView = self.view as! CollectionMovieView
+        collectionMovieView.drawMovieView(selectedAssets!)
     }
 
 

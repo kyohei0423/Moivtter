@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CollectionMovieView: UIView {
 
     let flowLayout = UICollectionViewFlowLayout()
+    var player: AVPlayer?
 
-    @IBOutlet weak var previewMovieView: UIView!
+    @IBOutlet weak var playMovieView: UIView!
     @IBOutlet weak var movieCollectionView: UICollectionView!
 
     override func awakeFromNib() {
@@ -28,8 +30,25 @@ class CollectionMovieView: UIView {
         movieCollectionView.collectionViewLayout = flowLayout
         collectionViewSettings()
     }
+    
+    func drawMovieView(selectedAssets: AVAsset) {
+        let playerItem = AVPlayerItem(asset: selectedAssets)
+        player = AVPlayer(playerItem: playerItem)
+        let playerLayer = AVPlayerLayer()
+        playerLayer.player = player
+        playerLayer.frame = playMovieView.bounds
+        playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        playMovieView.layer.addSublayer(playerLayer)
+        
+        startPlayer()
+    }
+    
+    private func startPlayer() {
+        player!.seekToTime(CMTimeMakeWithSeconds(0, Int32(NSEC_PER_SEC)))
+        player!.play()
+    }
 
-    func collectionViewSettings() {
+    private func collectionViewSettings() {
         self.movieCollectionView.backgroundColor = UIColor.whiteColor()
     }
 
