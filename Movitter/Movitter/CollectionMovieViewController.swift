@@ -51,8 +51,6 @@ class CollectionMovieViewController: UIViewController, UICollectionViewDelegate 
                     })
                 })
             })
-            dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), {
-            })
         } else {
             moveSettingApp()
         }
