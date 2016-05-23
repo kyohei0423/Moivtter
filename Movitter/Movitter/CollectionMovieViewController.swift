@@ -12,7 +12,7 @@ import AVFoundation
 class CollectionMovieViewController: UIViewController, UICollectionViewDelegate {
 
     let collectionMovieViewModel = CollectionMovieViewModel()
-    var selectedAssets: AVAsset?
+    var selectedAssets: AVAsset!
 
     override func loadView() {
         super.loadView()

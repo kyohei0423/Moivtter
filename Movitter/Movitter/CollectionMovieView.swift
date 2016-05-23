@@ -12,7 +12,7 @@ import AVFoundation
 class CollectionMovieView: UIView {
 
     let flowLayout = UICollectionViewFlowLayout()
-    var player: AVPlayer?
+    var player: AVPlayer!
 
     @IBOutlet weak var playMovieView: UIView!
     @IBOutlet weak var movieCollectionView: UICollectionView!
