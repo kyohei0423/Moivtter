@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MovieCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var captureImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        layoutCaptureView()
+    }
+    
     func fillWith(asset: AVAsset) {
         let imageGenerator = AVAssetImageGenerator(asset: asset)
         let capturePoint = CMTimeMakeWithSeconds(0.0, 600)
@@ -23,6 +28,8 @@ class MovieCollectionViewCell: UICollectionViewCell {
             print(error)
         }
     }
+    
+    private func layoutCaptureView() {
         captureImageView.contentMode = .ScaleAspectFill
     }
 
