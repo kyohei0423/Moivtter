@@ -26,7 +26,7 @@ class CollectionMovieView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
 
-        flowLayout.setCollectionViewLayout(self.frame.width)
+        flowLayout.setCollectionViewLayout(self.frame.width, columns: 3)
         movieCollectionView.collectionViewLayout = flowLayout
         collectionViewSettings()
     }

@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 extension UICollectionViewFlowLayout {
-    func setCollectionViewLayout(frameWidth: CGFloat) {
-        let itemLength = frameWidth / 3
+    func setCollectionViewLayout(frameWidth: CGFloat, columns: CGFloat) {
+        let itemLength = frameWidth / columns
         itemSize = CGSize(width: itemLength, height: itemLength)
         minimumLineSpacing = 0
         minimumInteritemSpacing = 0
