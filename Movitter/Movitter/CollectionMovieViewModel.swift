@@ -61,15 +61,7 @@ class CollectionMovieViewModel: NSObject, UICollectionViewDataSource {
 
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("MovieCollectionViewCell", forIndexPath: indexPath) as! MovieCollectionViewCell
-        let asset = self.avAssets[indexPath.row]
-        let imageGenerator = AVAssetImageGenerator(asset: asset)
-        let capturePoint = CMTimeMakeWithSeconds(0.0, 600)
-        do {
-            let captureImage = try imageGenerator.copyCGImageAtTime(capturePoint, actualTime: nil)
-            cell.captureImageView.image = UIImage(CGImage: captureImage)
-        } catch let error {
-            print(error)
-        }
+        cell.fillWith(avAssets[indexPath.row])
         return cell
     }
 }
