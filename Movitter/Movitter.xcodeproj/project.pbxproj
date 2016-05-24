@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701D4762F9A49840C5B963AF /* Pods_Movitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEA1E00A866EE1736FC62E9 /* Pods_Movitter.framework */; };
 		E25C273D1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273A1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png */; };
 		E25C273E1CDDF0E8003C7C87 /* ShutterButton1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273B1CDDF0E8003C7C87 /* ShutterButton1@2x.png */; };
 		E25C273F1CDDF0E8003C7C87 /* outer2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */; };
@@ -40,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7BEA1E00A866EE1736FC62E9 /* Pods_Movitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC40C8FCADAF53D202CAED1 /* Pods-Movitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movitter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Movitter/Pods-Movitter.debug.xcconfig"; sourceTree = "<group>"; };
 		E25C273A1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutterButtonStop@2x.png"; sourceTree = "<group>"; };
 		E25C273B1CDDF0E8003C7C87 /* ShutterButton1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutterButton1@2x.png"; sourceTree = "<group>"; };
 		E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "outer2@2x.png"; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 		E2CD09A81CD614B3009CA778 /* MovieListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		E2CD09AC1CD616E4009CA778 /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
 		E2CD09AD1CD616E4009CA778 /* MovieListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieListTableViewCell.xib; sourceTree = "<group>"; };
+		FD43521EC50CB08FC10749F1 /* Pods-Movitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movitter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Movitter/Pods-Movitter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +83,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701D4762F9A49840C5B963AF /* Pods_Movitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1272C054BEA40C1CC6B89AA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BEA1E00A866EE1736FC62E9 /* Pods_Movitter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89A604CB2F0979D1F6F631AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBC40C8FCADAF53D202CAED1 /* Pods-Movitter.debug.xcconfig */,
+				FD43521EC50CB08FC10749F1 /* Pods-Movitter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E25C27391CDDF0C5003C7C87 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +193,8 @@
 				E2CD09901CD60390009CA778 /* Movitter */,
 				E2CD098F1CD60390009CA778 /* Products */,
 				E25C27391CDDF0C5003C7C87 /* images */,
+				89A604CB2F0979D1F6F631AD /* Pods */,
+				1272C054BEA40C1CC6B89AA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -234,9 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2CD09A01CD60390009CA778 /* Build configuration list for PBXNativeTarget "Movitter" */;
 			buildPhases = (
+				14F443B8616632602D465557 /* 📦 Check Pods Manifest.lock */,
 				E2CD098A1CD60390009CA778 /* Sources */,
 				E2CD098B1CD60390009CA778 /* Frameworks */,
 				E2CD098C1CD60390009CA778 /* Resources */,
+				B433B63CF3442850E297C05C /* 📦 Embed Pods Frameworks */,
+				F1DC5EB1FB504AB3A46CA670 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,6 +330,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14F443B8616632602D465557 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B433B63CF3442850E297C05C /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Movitter/Pods-Movitter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1DC5EB1FB504AB3A46CA670 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Movitter/Pods-Movitter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2CD098A1CD60390009CA778 /* Sources */ = {
@@ -436,6 +511,7 @@
 		};
 		E2CD09A11CD60390009CA778 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC40C8FCADAF53D202CAED1 /* Pods-Movitter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Movitter/Info.plist;
@@ -448,6 +524,7 @@
 		};
 		E2CD09A21CD60390009CA778 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD43521EC50CB08FC10749F1 /* Pods-Movitter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Movitter/Info.plist;
