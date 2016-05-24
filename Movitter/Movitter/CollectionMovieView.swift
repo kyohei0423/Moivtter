@@ -49,7 +49,7 @@ class CollectionMovieView: UIView {
     }
 
     private func collectionViewSettings() {
-        self.movieCollectionView.backgroundColor = UIColor.whiteColor()
+        self.movieCollectionView.backgroundColor = UIColor(red: 244 / 255, green: 244 / 255, blue: 244 / 255, alpha: 1.0)
     }
 
 }
