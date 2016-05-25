@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="2491" y="-77"/>
         </scene>
-        <!--View Controller-->
+        <!--Collection Movie View Controller-->
         <scene sceneID="fBq-bL-jwZ">
             <objects>
-                <viewController id="vLo-XC-mr8" sceneMemberID="viewController">
+                <viewController id="vLo-XC-mr8" customClass="CollectionMovieViewController" customModule="Movitter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aLx-Le-Njf"/>
                         <viewControllerLayoutGuide type="bottom" id="I0e-B1-Dg9"/>
@@ -67,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="2491" y="659"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Common Navigation Controller-->
         <scene sceneID="BDM-Rz-wrd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Bb-aE-lCa" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Bb-aE-lCa" customClass="CommonNavigationController" customModule="Movitter" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZcN-qD-OyG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="207" y="-77"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Common Tab Bar Controller-->
         <scene sceneID="QJb-gj-5f1">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="p7b-mS-WN0" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="p7b-mS-WN0" customClass="CommonTabBarController" customModule="Movitter" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Wbj-NL-GxD">
                         <autoresizingMask key="autoresizingMask"/>
@@ -106,7 +106,7 @@
         <!--Select-->
         <scene sceneID="IcS-nA-OlB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yze-4n-NzY" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yze-4n-NzY" customClass="CommonNavigationController" customModule="Movitter" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Select" image="select.png" id="xYT-MG-DSP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uPo-9d-TTp">
