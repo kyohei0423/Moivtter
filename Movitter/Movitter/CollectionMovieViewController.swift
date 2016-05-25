@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Async
 
 class CollectionMovieViewController: UIViewController, UICollectionViewDelegate {
 
@@ -38,19 +39,16 @@ class CollectionMovieViewController: UIViewController, UICollectionViewDelegate 
 
     func setUpCameraroll(result: Bool) {
         if result {
-            let queue = dispatch_queue_create(nil, DISPATCH_QUEUE_SERIAL)
-            let dispatchGroup = dispatch_group_create()
-            dispatch_group_async(dispatchGroup, queue, { 
+            Async.background {
                 self.collectionMovieViewModel.getMovies()
-            })
-            dispatch_group_async(dispatchGroup, queue, { 
+            }.background {
                 self.collectionMovieViewModel.changeAsset({
-                    dispatch_async(dispatch_get_main_queue(), { 
+                    Async.main {
                         let collectionMovieView = self.view as! CollectionMovieView
                         collectionMovieView.movieCollectionView.reloadData()
-                    })
+                    }
                 })
-            })
+            }
         } else {
             moveSettingApp()
         }
@@ -67,7 +65,7 @@ class CollectionMovieViewController: UIViewController, UICollectionViewDelegate 
         alertController.addAction(action)
         presentViewController(alertController, animated: true, completion: nil)
     }
-    
+
     //delegate
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         selectedAssets = self.collectionMovieViewModel.avAssets[indexPath.row]
