@@ -12,6 +12,7 @@
 		E25C273E1CDDF0E8003C7C87 /* ShutterButton1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273B1CDDF0E8003C7C87 /* ShutterButton1@2x.png */; };
 		E25C273F1CDDF0E8003C7C87 /* outer2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */; };
 		E27819631CF9D67D004C5B9C /* Moveet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27819621CF9D67D004C5B9C /* Moveet.swift */; };
+		E27819841CFA03FD004C5B9C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27819831CFA03FD004C5B9C /* PostViewController.swift */; };
 		E288065C1CD7AE9A005E5838 /* movie.png in Resources */ = {isa = PBXBuildFile; fileRef = E288065B1CD7AE9A005E5838 /* movie.png */; };
 		E288065E1CD7B168005E5838 /* select.png in Resources */ = {isa = PBXBuildFile; fileRef = E288065D1CD7B168005E5838 /* select.png */; };
 		E2AC89651CD996C400B40234 /* UINib+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC89641CD996C400B40234 /* UINib+Extension.swift */; };
@@ -48,6 +49,7 @@
 		E25C273B1CDDF0E8003C7C87 /* ShutterButton1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutterButton1@2x.png"; sourceTree = "<group>"; };
 		E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "outer2@2x.png"; sourceTree = "<group>"; };
 		E27819621CF9D67D004C5B9C /* Moveet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moveet.swift; sourceTree = "<group>"; };
+		E27819831CFA03FD004C5B9C /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		E288065B1CD7AE9A005E5838 /* movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = movie.png; path = Movitter/movie.png; sourceTree = "<group>"; };
 		E288065D1CD7B168005E5838 /* select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = select.png; path = Movitter/select.png; sourceTree = "<group>"; };
 		E2AC89641CD996C400B40234 /* UINib+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINib+Extension.swift"; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 				E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		E27819821CFA03D3004C5B9C /* PostViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E27819831CFA03FD004C5B9C /* PostViewController.swift */,
+			);
+			name = PostViewController;
 			sourceTree = "<group>";
 		};
 		E28806561CD78FAB005E5838 /* NavigationController */ = {
@@ -217,6 +227,7 @@
 				E2CD09A31CD6147D009CA778 /* MovieList */,
 				E2AC89681CDAFA4900B40234 /* TakeMovie */,
 				E2BAB9B41CE9E0F600156708 /* CollectionMovie */,
+				E27819821CFA03D3004C5B9C /* PostViewController */,
 				E2CD09911CD60390009CA778 /* AppDelegate.swift */,
 				E2CD09981CD60390009CA778 /* Assets.xcassets */,
 				E2CD099A1CD60390009CA778 /* LaunchScreen.storyboard */,
@@ -415,6 +426,7 @@
 				E2BAB9BF1CE9EC9600156708 /* UICollectionView+Extension.swift in Sources */,
 				E2BAB9BB1CE9E20200156708 /* CollectionMovieViewController.swift in Sources */,
 				E2BAB9B71CE9E1A400156708 /* CollectionMovieView.swift in Sources */,
+				E27819841CFA03FD004C5B9C /* PostViewController.swift in Sources */,
 				E2AC89651CD996C400B40234 /* UINib+Extension.swift in Sources */,
 				E2AC896C1CDAFA9100B40234 /* TakeMovieView.swift in Sources */,
 				E2BAB9C31CE9F66200156708 /* MovieCollectionViewCell.swift in Sources */,

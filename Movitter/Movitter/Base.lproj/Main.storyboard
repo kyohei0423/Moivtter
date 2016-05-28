@@ -62,10 +62,31 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="vxd-he-OLU"/>
+                    <connections>
+                        <segue destination="Of8-7n-Lyh" kind="show" identifier="ShowPostViewController" id="3vD-7w-7Md"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lch-dk-7MS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2491" y="659"/>
+        </scene>
+        <!--Post View Controller-->
+        <scene sceneID="Bki-ZO-VFh">
+            <objects>
+                <viewController id="Of8-7n-Lyh" customClass="PostViewController" customModule="Movitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FW6-ww-55q"/>
+                        <viewControllerLayoutGuide type="bottom" id="zzz-ni-svv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FNd-TH-rOc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCM-7j-Gl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3198" y="659"/>
         </scene>
         <!--Common Navigation Controller-->
         <scene sceneID="BDM-Rz-wrd">
