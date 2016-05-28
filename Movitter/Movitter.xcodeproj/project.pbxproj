@@ -1,562 +1,1431 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		701D4762F9A49840C5B963AF /* Pods_Movitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEA1E00A866EE1736FC62E9 /* Pods_Movitter.framework */; };
-		E25C273D1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273A1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png */; };
-		E25C273E1CDDF0E8003C7C87 /* ShutterButton1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273B1CDDF0E8003C7C87 /* ShutterButton1@2x.png */; };
-		E25C273F1CDDF0E8003C7C87 /* outer2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */; };
-		E288065C1CD7AE9A005E5838 /* movie.png in Resources */ = {isa = PBXBuildFile; fileRef = E288065B1CD7AE9A005E5838 /* movie.png */; };
-		E288065E1CD7B168005E5838 /* select.png in Resources */ = {isa = PBXBuildFile; fileRef = E288065D1CD7B168005E5838 /* select.png */; };
-		E2AC89651CD996C400B40234 /* UINib+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC89641CD996C400B40234 /* UINib+Extension.swift */; };
-		E2AC89671CD99DFE00B40234 /* TableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC89661CD99DFE00B40234 /* TableView+Extension.swift */; };
-		E2AC896A1CDAFA6D00B40234 /* TakeMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC89691CDAFA6D00B40234 /* TakeMovieViewController.swift */; };
-		E2AC896C1CDAFA9100B40234 /* TakeMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC896B1CDAFA9100B40234 /* TakeMovieView.swift */; };
-		E2AC896F1CDAFAAB00B40234 /* TakeMovieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2AC896E1CDAFAAB00B40234 /* TakeMovieView.xib */; };
-		E2AC89711CDB110200B40234 /* TakeMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC89701CDB110200B40234 /* TakeMovieViewModel.swift */; };
-		E2BAB9B71CE9E1A400156708 /* CollectionMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAB9B61CE9E1A400156708 /* CollectionMovieView.swift */; };
-		E2BAB9B91CE9E1D500156708 /* CollectionMovieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BAB9B81CE9E1D500156708 /* CollectionMovieView.xib */; };
-		E2BAB9BB1CE9E20200156708 /* CollectionMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAB9BA1CE9E20200156708 /* CollectionMovieViewController.swift */; };
-		E2BAB9BD1CE9EA0300156708 /* UICollectionViewFlowLayout+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAB9BC1CE9EA0300156708 /* UICollectionViewFlowLayout+Extension.swift */; };
-		E2BAB9BF1CE9EC9600156708 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAB9BE1CE9EC9600156708 /* UICollectionView+Extension.swift */; };
-		E2BAB9C31CE9F66200156708 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAB9C11CE9F66200156708 /* MovieCollectionViewCell.swift */; };
-		E2BAB9C41CE9F66200156708 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BAB9C21CE9F66200156708 /* MovieCollectionViewCell.xib */; };
-		E2BAB9C61CEA059100156708 /* CollectionMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAB9C51CEA059100156708 /* CollectionMovieViewModel.swift */; };
-		E2BAB9C81CEDE6A400156708 /* CommonNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAB9C71CEDE6A400156708 /* CommonNavigationController.swift */; };
-		E2BAB9CA1CEDE6F400156708 /* CommonTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAB9C91CEDE6F400156708 /* CommonTabBarController.swift */; };
-		E2CD09921CD60390009CA778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD09911CD60390009CA778 /* AppDelegate.swift */; };
-		E2CD09971CD60390009CA778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CD09951CD60390009CA778 /* Main.storyboard */; };
-		E2CD09991CD60390009CA778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2CD09981CD60390009CA778 /* Assets.xcassets */; };
-		E2CD099C1CD60390009CA778 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CD099A1CD60390009CA778 /* LaunchScreen.storyboard */; };
-		E2CD09A51CD61493009CA778 /* MovieListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CD09A41CD61493009CA778 /* MovieListView.xib */; };
-		E2CD09A71CD614A2009CA778 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD09A61CD614A2009CA778 /* MovieListView.swift */; };
-		E2CD09A91CD614B3009CA778 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD09A81CD614B3009CA778 /* MovieListViewController.swift */; };
-		E2CD09AE1CD616E4009CA778 /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD09AC1CD616E4009CA778 /* MovieListTableViewCell.swift */; };
-		E2CD09AF1CD616E4009CA778 /* MovieListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CD09AD1CD616E4009CA778 /* MovieListTableViewCell.xib */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		7BEA1E00A866EE1736FC62E9 /* Pods_Movitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBC40C8FCADAF53D202CAED1 /* Pods-Movitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movitter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Movitter/Pods-Movitter.debug.xcconfig"; sourceTree = "<group>"; };
-		E25C273A1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutterButtonStop@2x.png"; sourceTree = "<group>"; };
-		E25C273B1CDDF0E8003C7C87 /* ShutterButton1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutterButton1@2x.png"; sourceTree = "<group>"; };
-		E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "outer2@2x.png"; sourceTree = "<group>"; };
-		E288065B1CD7AE9A005E5838 /* movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = movie.png; path = Movitter/movie.png; sourceTree = "<group>"; };
-		E288065D1CD7B168005E5838 /* select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = select.png; path = Movitter/select.png; sourceTree = "<group>"; };
-		E2AC89641CD996C400B40234 /* UINib+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINib+Extension.swift"; sourceTree = "<group>"; };
-		E2AC89661CD99DFE00B40234 /* TableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView+Extension.swift"; sourceTree = "<group>"; };
-		E2AC89691CDAFA6D00B40234 /* TakeMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeMovieViewController.swift; sourceTree = "<group>"; };
-		E2AC896B1CDAFA9100B40234 /* TakeMovieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeMovieView.swift; sourceTree = "<group>"; };
-		E2AC896E1CDAFAAB00B40234 /* TakeMovieView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TakeMovieView.xib; sourceTree = "<group>"; };
-		E2AC89701CDB110200B40234 /* TakeMovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeMovieViewModel.swift; sourceTree = "<group>"; };
-		E2BAB9B61CE9E1A400156708 /* CollectionMovieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionMovieView.swift; sourceTree = "<group>"; };
-		E2BAB9B81CE9E1D500156708 /* CollectionMovieView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionMovieView.xib; sourceTree = "<group>"; };
-		E2BAB9BA1CE9E20200156708 /* CollectionMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionMovieViewController.swift; sourceTree = "<group>"; };
-		E2BAB9BC1CE9EA0300156708 /* UICollectionViewFlowLayout+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+Extension.swift"; sourceTree = "<group>"; };
-		E2BAB9BE1CE9EC9600156708 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
-		E2BAB9C11CE9F66200156708 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
-		E2BAB9C21CE9F66200156708 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
-		E2BAB9C51CEA059100156708 /* CollectionMovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionMovieViewModel.swift; sourceTree = "<group>"; };
-		E2BAB9C71CEDE6A400156708 /* CommonNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonNavigationController.swift; sourceTree = "<group>"; };
-		E2BAB9C91CEDE6F400156708 /* CommonTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTabBarController.swift; sourceTree = "<group>"; };
-		E2CD098E1CD60390009CA778 /* Movitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2CD09911CD60390009CA778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2CD09961CD60390009CA778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E2CD09981CD60390009CA778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E2CD099B1CD60390009CA778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E2CD099D1CD60390009CA778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2CD09A41CD61493009CA778 /* MovieListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieListView.xib; sourceTree = "<group>"; };
-		E2CD09A61CD614A2009CA778 /* MovieListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
-		E2CD09A81CD614B3009CA778 /* MovieListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
-		E2CD09AC1CD616E4009CA778 /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
-		E2CD09AD1CD616E4009CA778 /* MovieListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieListTableViewCell.xib; sourceTree = "<group>"; };
-		FD43521EC50CB08FC10749F1 /* Pods-Movitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movitter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Movitter/Pods-Movitter.release.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		E2CD098B1CD60390009CA778 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				701D4762F9A49840C5B963AF /* Pods_Movitter.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		1272C054BEA40C1CC6B89AA9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7BEA1E00A866EE1736FC62E9 /* Pods_Movitter.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		89A604CB2F0979D1F6F631AD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DBC40C8FCADAF53D202CAED1 /* Pods-Movitter.debug.xcconfig */,
-				FD43521EC50CB08FC10749F1 /* Pods-Movitter.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E25C27391CDDF0C5003C7C87 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				E288065B1CD7AE9A005E5838 /* movie.png */,
-				E288065D1CD7B168005E5838 /* select.png */,
-				E25C273A1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png */,
-				E25C273B1CDDF0E8003C7C87 /* ShutterButton1@2x.png */,
-				E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */,
-			);
-			name = images;
-			sourceTree = "<group>";
-		};
-		E28806561CD78FAB005E5838 /* NavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				E2BAB9C71CEDE6A400156708 /* CommonNavigationController.swift */,
-				E2BAB9C91CEDE6F400156708 /* CommonTabBarController.swift */,
-			);
-			name = NavigationController;
-			sourceTree = "<group>";
-		};
-		E2AC89631CD9940C00B40234 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				E2AC89641CD996C400B40234 /* UINib+Extension.swift */,
-				E2AC89661CD99DFE00B40234 /* TableView+Extension.swift */,
-				E2BAB9BC1CE9EA0300156708 /* UICollectionViewFlowLayout+Extension.swift */,
-				E2BAB9BE1CE9EC9600156708 /* UICollectionView+Extension.swift */,
-			);
-			name = Extension;
-			sourceTree = "<group>";
-		};
-		E2AC89681CDAFA4900B40234 /* TakeMovie */ = {
-			isa = PBXGroup;
-			children = (
-				E2AC896D1CDAFA9600B40234 /* TakeMovieView */,
-				E2AC89691CDAFA6D00B40234 /* TakeMovieViewController.swift */,
-			);
-			name = TakeMovie;
-			sourceTree = "<group>";
-		};
-		E2AC896D1CDAFA9600B40234 /* TakeMovieView */ = {
-			isa = PBXGroup;
-			children = (
-				E2AC896B1CDAFA9100B40234 /* TakeMovieView.swift */,
-				E2AC896E1CDAFAAB00B40234 /* TakeMovieView.xib */,
-				E2AC89701CDB110200B40234 /* TakeMovieViewModel.swift */,
-			);
-			name = TakeMovieView;
-			sourceTree = "<group>";
-		};
-		E2BAB9B41CE9E0F600156708 /* CollectionMovie */ = {
-			isa = PBXGroup;
-			children = (
-				E2BAB9C01CE9F61B00156708 /* MovieCollectionViewCell */,
-				E2BAB9B51CE9E16300156708 /* CollectionMovieView */,
-				E2BAB9C51CEA059100156708 /* CollectionMovieViewModel.swift */,
-				E2BAB9BA1CE9E20200156708 /* CollectionMovieViewController.swift */,
-			);
-			name = CollectionMovie;
-			sourceTree = "<group>";
-		};
-		E2BAB9B51CE9E16300156708 /* CollectionMovieView */ = {
-			isa = PBXGroup;
-			children = (
-				E2BAB9B61CE9E1A400156708 /* CollectionMovieView.swift */,
-				E2BAB9B81CE9E1D500156708 /* CollectionMovieView.xib */,
-			);
-			name = CollectionMovieView;
-			sourceTree = "<group>";
-		};
-		E2BAB9C01CE9F61B00156708 /* MovieCollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				E2BAB9C11CE9F66200156708 /* MovieCollectionViewCell.swift */,
-				E2BAB9C21CE9F66200156708 /* MovieCollectionViewCell.xib */,
-			);
-			name = MovieCollectionViewCell;
-			sourceTree = "<group>";
-		};
-		E2CD09851CD60390009CA778 = {
-			isa = PBXGroup;
-			children = (
-				E2CD09901CD60390009CA778 /* Movitter */,
-				E2CD098F1CD60390009CA778 /* Products */,
-				E25C27391CDDF0C5003C7C87 /* images */,
-				89A604CB2F0979D1F6F631AD /* Pods */,
-				1272C054BEA40C1CC6B89AA9 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		E2CD098F1CD60390009CA778 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E2CD098E1CD60390009CA778 /* Movitter.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E2CD09901CD60390009CA778 /* Movitter */ = {
-			isa = PBXGroup;
-			children = (
-				E2CD09951CD60390009CA778 /* Main.storyboard */,
-				E2AC89631CD9940C00B40234 /* Extension */,
-				E28806561CD78FAB005E5838 /* NavigationController */,
-				E2CD09A31CD6147D009CA778 /* MovieList */,
-				E2AC89681CDAFA4900B40234 /* TakeMovie */,
-				E2BAB9B41CE9E0F600156708 /* CollectionMovie */,
-				E2CD09911CD60390009CA778 /* AppDelegate.swift */,
-				E2CD09981CD60390009CA778 /* Assets.xcassets */,
-				E2CD099A1CD60390009CA778 /* LaunchScreen.storyboard */,
-				E2CD099D1CD60390009CA778 /* Info.plist */,
-			);
-			path = Movitter;
-			sourceTree = "<group>";
-		};
-		E2CD09A31CD6147D009CA778 /* MovieList */ = {
-			isa = PBXGroup;
-			children = (
-				E2CD09AB1CD616A3009CA778 /* MovieListTableViewCell */,
-				E2CD09AA1CD61693009CA778 /* MovieListVIew */,
-				E2CD09A81CD614B3009CA778 /* MovieListViewController.swift */,
-			);
-			name = MovieList;
-			sourceTree = "<group>";
-		};
-		E2CD09AA1CD61693009CA778 /* MovieListVIew */ = {
-			isa = PBXGroup;
-			children = (
-				E2CD09A41CD61493009CA778 /* MovieListView.xib */,
-				E2CD09A61CD614A2009CA778 /* MovieListView.swift */,
-			);
-			name = MovieListVIew;
-			sourceTree = "<group>";
-		};
-		E2CD09AB1CD616A3009CA778 /* MovieListTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				E2CD09AC1CD616E4009CA778 /* MovieListTableViewCell.swift */,
-				E2CD09AD1CD616E4009CA778 /* MovieListTableViewCell.xib */,
-			);
-			name = MovieListTableViewCell;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		E2CD098D1CD60390009CA778 /* Movitter */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E2CD09A01CD60390009CA778 /* Build configuration list for PBXNativeTarget "Movitter" */;
-			buildPhases = (
-				14F443B8616632602D465557 /* 📦 Check Pods Manifest.lock */,
-				E2CD098A1CD60390009CA778 /* Sources */,
-				E2CD098B1CD60390009CA778 /* Frameworks */,
-				E2CD098C1CD60390009CA778 /* Resources */,
-				B433B63CF3442850E297C05C /* 📦 Embed Pods Frameworks */,
-				F1DC5EB1FB504AB3A46CA670 /* 📦 Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Movitter;
-			productName = Movitter;
-			productReference = E2CD098E1CD60390009CA778 /* Movitter.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		E2CD09861CD60390009CA778 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "Kyohei Seo";
-				TargetAttributes = {
-					E2CD098D1CD60390009CA778 = {
-						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = H4BBWF3E5R;
-					};
-				};
-			};
-			buildConfigurationList = E2CD09891CD60390009CA778 /* Build configuration list for PBXProject "Movitter" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = E2CD09851CD60390009CA778;
-			productRefGroup = E2CD098F1CD60390009CA778 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				E2CD098D1CD60390009CA778 /* Movitter */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		E2CD098C1CD60390009CA778 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E2CD09AF1CD616E4009CA778 /* MovieListTableViewCell.xib in Resources */,
-				E2CD099C1CD60390009CA778 /* LaunchScreen.storyboard in Resources */,
-				E2AC896F1CDAFAAB00B40234 /* TakeMovieView.xib in Resources */,
-				E288065C1CD7AE9A005E5838 /* movie.png in Resources */,
-				E288065E1CD7B168005E5838 /* select.png in Resources */,
-				E2BAB9C41CE9F66200156708 /* MovieCollectionViewCell.xib in Resources */,
-				E25C273D1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png in Resources */,
-				E2CD09A51CD61493009CA778 /* MovieListView.xib in Resources */,
-				E2BAB9B91CE9E1D500156708 /* CollectionMovieView.xib in Resources */,
-				E25C273F1CDDF0E8003C7C87 /* outer2@2x.png in Resources */,
-				E2CD09991CD60390009CA778 /* Assets.xcassets in Resources */,
-				E25C273E1CDDF0E8003C7C87 /* ShutterButton1@2x.png in Resources */,
-				E2CD09971CD60390009CA778 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		14F443B8616632602D465557 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B433B63CF3442850E297C05C /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Movitter/Pods-Movitter-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F1DC5EB1FB504AB3A46CA670 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Movitter/Pods-Movitter-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		E2CD098A1CD60390009CA778 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E2BAB9CA1CEDE6F400156708 /* CommonTabBarController.swift in Sources */,
-				E2BAB9C81CEDE6A400156708 /* CommonNavigationController.swift in Sources */,
-				E2AC896A1CDAFA6D00B40234 /* TakeMovieViewController.swift in Sources */,
-				E2CD09A91CD614B3009CA778 /* MovieListViewController.swift in Sources */,
-				E2AC89671CD99DFE00B40234 /* TableView+Extension.swift in Sources */,
-				E2CD09921CD60390009CA778 /* AppDelegate.swift in Sources */,
-				E2BAB9C61CEA059100156708 /* CollectionMovieViewModel.swift in Sources */,
-				E2BAB9BD1CE9EA0300156708 /* UICollectionViewFlowLayout+Extension.swift in Sources */,
-				E2CD09AE1CD616E4009CA778 /* MovieListTableViewCell.swift in Sources */,
-				E2BAB9BF1CE9EC9600156708 /* UICollectionView+Extension.swift in Sources */,
-				E2BAB9BB1CE9E20200156708 /* CollectionMovieViewController.swift in Sources */,
-				E2BAB9B71CE9E1A400156708 /* CollectionMovieView.swift in Sources */,
-				E2AC89651CD996C400B40234 /* UINib+Extension.swift in Sources */,
-				E2AC896C1CDAFA9100B40234 /* TakeMovieView.swift in Sources */,
-				E2BAB9C31CE9F66200156708 /* MovieCollectionViewCell.swift in Sources */,
-				E2AC89711CDB110200B40234 /* TakeMovieViewModel.swift in Sources */,
-				E2CD09A71CD614A2009CA778 /* MovieListView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E2CD09951CD60390009CA778 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E2CD09961CD60390009CA778 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E2CD099A1CD60390009CA778 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E2CD099B1CD60390009CA778 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		E2CD099E1CD60390009CA778 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		E2CD099F1CD60390009CA778 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E2CD09A11CD60390009CA778 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBC40C8FCADAF53D202CAED1 /* Pods-Movitter.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Movitter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.seokyohei.Movitter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E2CD09A21CD60390009CA778 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD43521EC50CB08FC10749F1 /* Pods-Movitter.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Movitter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.seokyohei.Movitter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		E2CD09891CD60390009CA778 /* Build configuration list for PBXProject "Movitter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E2CD099E1CD60390009CA778 /* Debug */,
-				E2CD099F1CD60390009CA778 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E2CD09A01CD60390009CA778 /* Build configuration list for PBXNativeTarget "Movitter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E2CD09A11CD60390009CA778 /* Debug */,
-				E2CD09A21CD60390009CA778 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = E2CD09861CD60390009CA778 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1272C054BEA40C1CC6B89AA9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7BEA1E00A866EE1736FC62E9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14F443B8616632602D465557</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>701D4762F9A49840C5B963AF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7BEA1E00A866EE1736FC62E9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79B8D4A9899AD05E9440145D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Movitter/Pods-Movitter-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>7BEA1E00A866EE1736FC62E9</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_Movitter.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>89A604CB2F0979D1F6F631AD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DBC40C8FCADAF53D202CAED1</string>
+				<string>FD43521EC50CB08FC10749F1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B433B63CF3442850E297C05C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Movitter/Pods-Movitter-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>DBC40C8FCADAF53D202CAED1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Movitter.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Movitter/Pods-Movitter.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E25C27391CDDF0C5003C7C87</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E288065B1CD7AE9A005E5838</string>
+				<string>E288065D1CD7B168005E5838</string>
+				<string>E25C273A1CDDF0E8003C7C87</string>
+				<string>E25C273B1CDDF0E8003C7C87</string>
+				<string>E25C273C1CDDF0E8003C7C87</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>images</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E25C273A1CDDF0E8003C7C87</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>ShutterButtonStop@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E25C273B1CDDF0E8003C7C87</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>ShutterButton1@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E25C273C1CDDF0E8003C7C87</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>outer2@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E25C273D1CDDF0E8003C7C87</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E25C273A1CDDF0E8003C7C87</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E25C273E1CDDF0E8003C7C87</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E25C273B1CDDF0E8003C7C87</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E25C273F1CDDF0E8003C7C87</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E25C273C1CDDF0E8003C7C87</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E28806561CD78FAB005E5838</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E2BAB9C71CEDE6A400156708</string>
+				<string>E2BAB9C91CEDE6F400156708</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>NavigationController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E288065B1CD7AE9A005E5838</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>movie.png</string>
+			<key>path</key>
+			<string>Movitter/movie.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E288065C1CD7AE9A005E5838</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E288065B1CD7AE9A005E5838</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E288065D1CD7B168005E5838</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>select.png</string>
+			<key>path</key>
+			<string>Movitter/select.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E288065E1CD7B168005E5838</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E288065D1CD7B168005E5838</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2AC89631CD9940C00B40234</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E2AC89641CD996C400B40234</string>
+				<string>E2AC89661CD99DFE00B40234</string>
+				<string>E2BAB9BC1CE9EA0300156708</string>
+				<string>E2BAB9BE1CE9EC9600156708</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Extension</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2AC89641CD996C400B40234</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>UINib+Extension.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2AC89651CD996C400B40234</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2AC89641CD996C400B40234</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2AC89661CD99DFE00B40234</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TableView+Extension.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2AC89671CD99DFE00B40234</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2AC89661CD99DFE00B40234</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2AC89681CDAFA4900B40234</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E2AC896D1CDAFA9600B40234</string>
+				<string>E2AC89691CDAFA6D00B40234</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>TakeMovie</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2AC89691CDAFA6D00B40234</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TakeMovieViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2AC896A1CDAFA6D00B40234</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2AC89691CDAFA6D00B40234</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2AC896B1CDAFA9100B40234</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TakeMovieView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2AC896C1CDAFA9100B40234</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2AC896B1CDAFA9100B40234</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2AC896D1CDAFA9600B40234</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E2AC896B1CDAFA9100B40234</string>
+				<string>E2AC896E1CDAFAAB00B40234</string>
+				<string>E2AC89701CDB110200B40234</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>TakeMovieView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2AC896E1CDAFAAB00B40234</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>TakeMovieView.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2AC896F1CDAFAAB00B40234</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2AC896E1CDAFAAB00B40234</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2AC89701CDB110200B40234</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TakeMovieViewModel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2AC89711CDB110200B40234</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2AC89701CDB110200B40234</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2BAB9B41CE9E0F600156708</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E2BAB9C01CE9F61B00156708</string>
+				<string>E2BAB9B51CE9E16300156708</string>
+				<string>E2BAB9C51CEA059100156708</string>
+				<string>E2BAB9BA1CE9E20200156708</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>CollectionMovie</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2BAB9B51CE9E16300156708</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E2BAB9B61CE9E1A400156708</string>
+				<string>E2BAB9B81CE9E1D500156708</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>CollectionMovieView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2BAB9B61CE9E1A400156708</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>CollectionMovieView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2BAB9B71CE9E1A400156708</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2BAB9B61CE9E1A400156708</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2BAB9B81CE9E1D500156708</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>CollectionMovieView.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2BAB9B91CE9E1D500156708</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2BAB9B81CE9E1D500156708</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2BAB9BA1CE9E20200156708</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>CollectionMovieViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2BAB9BB1CE9E20200156708</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2BAB9BA1CE9E20200156708</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2BAB9BC1CE9EA0300156708</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>UICollectionViewFlowLayout+Extension.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2BAB9BD1CE9EA0300156708</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2BAB9BC1CE9EA0300156708</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2BAB9BE1CE9EC9600156708</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>UICollectionView+Extension.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2BAB9BF1CE9EC9600156708</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2BAB9BE1CE9EC9600156708</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2BAB9C01CE9F61B00156708</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E2BAB9C11CE9F66200156708</string>
+				<string>E2BAB9C21CE9F66200156708</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MovieCollectionViewCell</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2BAB9C11CE9F66200156708</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>MovieCollectionViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2BAB9C21CE9F66200156708</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>MovieCollectionViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2BAB9C31CE9F66200156708</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2BAB9C11CE9F66200156708</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2BAB9C41CE9F66200156708</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2BAB9C21CE9F66200156708</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2BAB9C51CEA059100156708</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>CollectionMovieViewModel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2BAB9C61CEA059100156708</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2BAB9C51CEA059100156708</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2BAB9C71CEDE6A400156708</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>CommonNavigationController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2BAB9C81CEDE6A400156708</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2BAB9C71CEDE6A400156708</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2BAB9C91CEDE6F400156708</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>CommonTabBarController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2BAB9CA1CEDE6F400156708</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2BAB9C91CEDE6F400156708</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2CD09851CD60390009CA778</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E2CD09901CD60390009CA778</string>
+				<string>E2CD098F1CD60390009CA778</string>
+				<string>E25C27391CDDF0C5003C7C87</string>
+				<string>89A604CB2F0979D1F6F631AD</string>
+				<string>1272C054BEA40C1CC6B89AA9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD09861CD60390009CA778</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0730</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Kyohei Seo</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>E2CD098D1CD60390009CA778</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>DevelopmentTeam</key>
+						<string>H4BBWF3E5R</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>E2CD09891CD60390009CA778</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>E2CD09851CD60390009CA778</string>
+			<key>productRefGroup</key>
+			<string>E2CD098F1CD60390009CA778</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>E2CD098D1CD60390009CA778</string>
+			</array>
+		</dict>
+		<key>E2CD09891CD60390009CA778</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E2CD099E1CD60390009CA778</string>
+				<string>E2CD099F1CD60390009CA778</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E2CD098A1CD60390009CA778</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E2BAB9CA1CEDE6F400156708</string>
+				<string>E2BAB9C81CEDE6A400156708</string>
+				<string>E2AC896A1CDAFA6D00B40234</string>
+				<string>E2CD09A91CD614B3009CA778</string>
+				<string>E2AC89671CD99DFE00B40234</string>
+				<string>E2CD09921CD60390009CA778</string>
+				<string>E2BAB9C61CEA059100156708</string>
+				<string>E2BAB9BD1CE9EA0300156708</string>
+				<string>E2CD09AE1CD616E4009CA778</string>
+				<string>E2BAB9BF1CE9EC9600156708</string>
+				<string>E2BAB9BB1CE9E20200156708</string>
+				<string>E2BAB9B71CE9E1A400156708</string>
+				<string>E2AC89651CD996C400B40234</string>
+				<string>E2AC896C1CDAFA9100B40234</string>
+				<string>E2BAB9C31CE9F66200156708</string>
+				<string>E2AC89711CDB110200B40234</string>
+				<string>E2CD09A71CD614A2009CA778</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E2CD098B1CD60390009CA778</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>701D4762F9A49840C5B963AF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E2CD098C1CD60390009CA778</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E2CD09AF1CD616E4009CA778</string>
+				<string>E2CD099C1CD60390009CA778</string>
+				<string>E2AC896F1CDAFAAB00B40234</string>
+				<string>E288065C1CD7AE9A005E5838</string>
+				<string>E288065E1CD7B168005E5838</string>
+				<string>E2BAB9C41CE9F66200156708</string>
+				<string>E25C273D1CDDF0E8003C7C87</string>
+				<string>E2CD09A51CD61493009CA778</string>
+				<string>E2BAB9B91CE9E1D500156708</string>
+				<string>E25C273F1CDDF0E8003C7C87</string>
+				<string>E2CD09991CD60390009CA778</string>
+				<string>E25C273E1CDDF0E8003C7C87</string>
+				<string>E2CD09971CD60390009CA778</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E2CD098D1CD60390009CA778</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>E2CD09A01CD60390009CA778</string>
+			<key>buildPhases</key>
+			<array>
+				<string>14F443B8616632602D465557</string>
+				<string>E2CD098A1CD60390009CA778</string>
+				<string>E2CD098B1CD60390009CA778</string>
+				<string>E2CD098C1CD60390009CA778</string>
+				<string>B433B63CF3442850E297C05C</string>
+				<string>F1DC5EB1FB504AB3A46CA670</string>
+				<string>79B8D4A9899AD05E9440145D</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Movitter</string>
+			<key>productName</key>
+			<string>Movitter</string>
+			<key>productReference</key>
+			<string>E2CD098E1CD60390009CA778</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>E2CD098E1CD60390009CA778</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Movitter.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>E2CD098F1CD60390009CA778</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E2CD098E1CD60390009CA778</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD09901CD60390009CA778</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E2CD09951CD60390009CA778</string>
+				<string>E2AC89631CD9940C00B40234</string>
+				<string>E28806561CD78FAB005E5838</string>
+				<string>E2CD09A31CD6147D009CA778</string>
+				<string>E2AC89681CDAFA4900B40234</string>
+				<string>E2BAB9B41CE9E0F600156708</string>
+				<string>E2CD09911CD60390009CA778</string>
+				<string>E2CD09981CD60390009CA778</string>
+				<string>E2CD099A1CD60390009CA778</string>
+				<string>E2CD099D1CD60390009CA778</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Movitter</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD09911CD60390009CA778</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD09921CD60390009CA778</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2CD09911CD60390009CA778</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2CD09951CD60390009CA778</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E2CD09961CD60390009CA778</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD09961CD60390009CA778</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD09971CD60390009CA778</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2CD09951CD60390009CA778</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2CD09981CD60390009CA778</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD09991CD60390009CA778</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2CD09981CD60390009CA778</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2CD099A1CD60390009CA778</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E2CD099B1CD60390009CA778</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD099B1CD60390009CA778</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD099C1CD60390009CA778</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2CD099A1CD60390009CA778</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2CD099D1CD60390009CA778</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD099E1CD60390009CA778</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E2CD099F1CD60390009CA778</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E2CD09A01CD60390009CA778</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E2CD09A11CD60390009CA778</string>
+				<string>E2CD09A21CD60390009CA778</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E2CD09A11CD60390009CA778</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>DBC40C8FCADAF53D202CAED1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Movitter/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.seokyohei.Movitter</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E2CD09A21CD60390009CA778</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>FD43521EC50CB08FC10749F1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Movitter/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.seokyohei.Movitter</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E2CD09A31CD6147D009CA778</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E2CD09AB1CD616A3009CA778</string>
+				<string>E2CD09AA1CD61693009CA778</string>
+				<string>E2CD09A81CD614B3009CA778</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MovieList</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD09A41CD61493009CA778</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>MovieListView.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD09A51CD61493009CA778</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2CD09A41CD61493009CA778</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2CD09A61CD614A2009CA778</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>MovieListView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD09A71CD614A2009CA778</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2CD09A61CD614A2009CA778</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2CD09A81CD614B3009CA778</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>MovieListViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD09A91CD614B3009CA778</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2CD09A81CD614B3009CA778</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2CD09AA1CD61693009CA778</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E2CD09A41CD61493009CA778</string>
+				<string>E2CD09A61CD614A2009CA778</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MovieListVIew</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD09AB1CD616A3009CA778</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E2CD09AC1CD616E4009CA778</string>
+				<string>E2CD09AD1CD616E4009CA778</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MovieListTableViewCell</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD09AC1CD616E4009CA778</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>MovieListTableViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD09AD1CD616E4009CA778</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>MovieListTableViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD09AE1CD616E4009CA778</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2CD09AC1CD616E4009CA778</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2CD09AF1CD616E4009CA778</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2CD09AD1CD616E4009CA778</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F1DC5EB1FB504AB3A46CA670</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Movitter/Pods-Movitter-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>FD43521EC50CB08FC10749F1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Movitter.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Movitter/Pods-Movitter.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>E2CD09861CD60390009CA778</string>
+</dict>
+</plist>
