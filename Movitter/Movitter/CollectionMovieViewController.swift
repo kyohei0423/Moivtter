@@ -71,7 +71,6 @@ class CollectionMovieViewController: UIViewController, UICollectionViewDelegate 
         super.prepareForSegue(segue, sender: sender)
         
         let postVC = segue.destinationViewController as! PostViewController
-        postVC.postViewModel.moveet.asset = selectedAsset
         postVC.moveet.asset = selectedAsset
     }
 
