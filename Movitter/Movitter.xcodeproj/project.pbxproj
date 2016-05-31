@@ -21,6 +21,8 @@
 		E2AC896C1CDAFA9100B40234 /* TakeMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC896B1CDAFA9100B40234 /* TakeMovieView.swift */; };
 		E2AC896F1CDAFAAB00B40234 /* TakeMovieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2AC896E1CDAFAAB00B40234 /* TakeMovieView.xib */; };
 		E2AC89711CDB110200B40234 /* TakeMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC89701CDB110200B40234 /* TakeMovieViewModel.swift */; };
+		E2B616DD1CFA0E3A003C2FAC /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B616DC1CFA0E3A003C2FAC /* PostView.swift */; };
+		E2B616DF1CFA0E4D003C2FAC /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2B616DE1CFA0E4D003C2FAC /* PostView.xib */; };
 		E2BAB9B71CE9E1A400156708 /* CollectionMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAB9B61CE9E1A400156708 /* CollectionMovieView.swift */; };
 		E2BAB9B91CE9E1D500156708 /* CollectionMovieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BAB9B81CE9E1D500156708 /* CollectionMovieView.xib */; };
 		E2BAB9BB1CE9E20200156708 /* CollectionMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAB9BA1CE9E20200156708 /* CollectionMovieViewController.swift */; };
@@ -58,6 +60,8 @@
 		E2AC896B1CDAFA9100B40234 /* TakeMovieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeMovieView.swift; sourceTree = "<group>"; };
 		E2AC896E1CDAFAAB00B40234 /* TakeMovieView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TakeMovieView.xib; sourceTree = "<group>"; };
 		E2AC89701CDB110200B40234 /* TakeMovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeMovieViewModel.swift; sourceTree = "<group>"; };
+		E2B616DC1CFA0E3A003C2FAC /* PostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		E2B616DE1CFA0E4D003C2FAC /* PostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostView.xib; sourceTree = "<group>"; };
 		E2BAB9B61CE9E1A400156708 /* CollectionMovieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionMovieView.swift; sourceTree = "<group>"; };
 		E2BAB9B81CE9E1D500156708 /* CollectionMovieView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionMovieView.xib; sourceTree = "<group>"; };
 		E2BAB9BA1CE9E20200156708 /* CollectionMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionMovieViewController.swift; sourceTree = "<group>"; };
@@ -123,12 +127,13 @@
 			name = images;
 			sourceTree = "<group>";
 		};
-		E27819821CFA03D3004C5B9C /* PostViewController */ = {
+		E27819821CFA03D3004C5B9C /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				E2B616DB1CFA0E21003C2FAC /* PostView */,
 				E27819831CFA03FD004C5B9C /* PostViewController.swift */,
 			);
-			name = PostViewController;
+			name = Post;
 			sourceTree = "<group>";
 		};
 		E28806561CD78FAB005E5838 /* NavigationController */ = {
@@ -168,6 +173,15 @@
 				E2AC89701CDB110200B40234 /* TakeMovieViewModel.swift */,
 			);
 			name = TakeMovieView;
+			sourceTree = "<group>";
+		};
+		E2B616DB1CFA0E21003C2FAC /* PostView */ = {
+			isa = PBXGroup;
+			children = (
+				E2B616DC1CFA0E3A003C2FAC /* PostView.swift */,
+				E2B616DE1CFA0E4D003C2FAC /* PostView.xib */,
+			);
+			name = PostView;
 			sourceTree = "<group>";
 		};
 		E2BAB9B41CE9E0F600156708 /* CollectionMovie */ = {
@@ -227,7 +241,7 @@
 				E2CD09A31CD6147D009CA778 /* MovieList */,
 				E2AC89681CDAFA4900B40234 /* TakeMovie */,
 				E2BAB9B41CE9E0F600156708 /* CollectionMovie */,
-				E27819821CFA03D3004C5B9C /* PostViewController */,
+				E27819821CFA03D3004C5B9C /* Post */,
 				E2CD09911CD60390009CA778 /* AppDelegate.swift */,
 				E2CD09981CD60390009CA778 /* Assets.xcassets */,
 				E2CD099A1CD60390009CA778 /* LaunchScreen.storyboard */,
@@ -338,6 +352,7 @@
 				E2CD09A51CD61493009CA778 /* MovieListView.xib in Resources */,
 				E2BAB9B91CE9E1D500156708 /* CollectionMovieView.xib in Resources */,
 				E25C273F1CDDF0E8003C7C87 /* outer2@2x.png in Resources */,
+				E2B616DF1CFA0E4D003C2FAC /* PostView.xib in Resources */,
 				E2CD09991CD60390009CA778 /* Assets.xcassets in Resources */,
 				E25C273E1CDDF0E8003C7C87 /* ShutterButton1@2x.png in Resources */,
 				E2CD09971CD60390009CA778 /* Main.storyboard in Resources */,
@@ -432,6 +447,7 @@
 				E2BAB9C31CE9F66200156708 /* MovieCollectionViewCell.swift in Sources */,
 				E27819631CF9D67D004C5B9C /* Moveet.swift in Sources */,
 				E2AC89711CDB110200B40234 /* TakeMovieViewModel.swift in Sources */,
+				E2B616DD1CFA0E3A003C2FAC /* PostView.swift in Sources */,
 				E2CD09A71CD614A2009CA778 /* MovieListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

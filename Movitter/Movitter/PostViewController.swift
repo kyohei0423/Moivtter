@@ -9,16 +9,69 @@
 import UIKit
 
 class PostViewController: UIViewController {
+    let moveet = Moveet()
+    
+    override func loadView() {
+        super.loadView()
+        view = UINib.instantiateFirstView("PostView")
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setTabBar()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setNavigationItem()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let postView = view as! PostView
+        postView.drawMovieView(moveet.asset)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tapBackButton() {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    func tapPostButton() {
+        let postView = view as! PostView
+        moveet.text = postView.commentTextView.text
+        print(postView.commentTextView.text)
+        if moveet.validation() {
+            moveet.save({ 
+                self.dismissViewControllerAnimated(true, completion: nil)
+            })
+        } else {
+            showAlert()
+        }
+    }
+    
+    private func setNavigationItem() {
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: #selector(PostViewController.tapBackButton))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Post", style: .Plain, target: self, action: #selector(PostViewController.tapPostButton))
+    }
+    
+    private func setTabBar() {
+        self.tabBarController?.tabBar.hidden      = true
+        self.tabBarController?.tabBar.translucent = true
+    }
+    
+    private func showAlert() {
+        let alertVC = UIAlertController(title: "エラー", message: "コメントが入力されていません", preferredStyle: .Alert)
+        let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        alertVC.addAction(action)
+        self.presentViewController(alertVC, animated: true, completion: nil)
     }
     
 
