@@ -14,15 +14,16 @@ class PostView: UIView {
     @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var commentTextView: UITextView!
     @IBOutlet weak var playMovieView: UIView!
+    let margin: CGFloat = 8
     
     var player: AVPlayer!
     
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        setCommentLabel(8, height: 30)
-        setCommentTextView(8, height: 150)
-        setPlayMovieView(8)
+        setCommentLabel(margin: margin, height: 30)
+        setCommentTextView(margin: margin, height: 150)
+        setPlayMovieView(margin: margin)
     }
     
     func drawMovieView(selectedAssets: AVAsset) {
@@ -37,14 +38,14 @@ class PostView: UIView {
         startPlayer()
     }
     
-    private func setCommentLabel(margin: CGFloat, height: CGFloat) {
+    private func setCommentLabel(margin margin: CGFloat, height: CGFloat) {
         commentLabel.frame.origin = CGPoint(x: margin, y: margin)
         let width                 = self.frame.width - margin * 2
         commentLabel.frame.size   = CGSize(width: width, height: height)
         commentLabel.text!        = "コメント（必須）"
     }
     
-    private func setCommentTextView(margin: CGFloat, height: CGFloat) {
+    private func setCommentTextView(margin margin: CGFloat, height: CGFloat) {
         let y = margin * 2 + commentLabel.frame.height
         commentTextView.frame.origin      = CGPoint(x: margin, y: y)
         let width                         = self.frame.width - margin * 2
@@ -52,7 +53,7 @@ class PostView: UIView {
         commentTextView.layer.borderWidth = 1
     }
     
-    private func setPlayMovieView(margin: CGFloat) {
+    private func setPlayMovieView(margin margin: CGFloat) {
         let y                      = margin * 4 + commentLabel.frame.height + commentTextView.frame.height
         playMovieView.frame.origin = CGPoint(x: margin, y: y)
         let length                 = self.frame.width - margin * 2
