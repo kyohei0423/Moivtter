@@ -62,7 +62,7 @@ class PostView: UIView {
     }
     
     private func startPlayer() {
-        player!.seekToTime(CMTimeMakeWithSeconds(0, Int32(NSEC_PER_SEC)))
-        player!.play()
+        player.seekToTime(CMTimeMakeWithSeconds(0, Int32(NSEC_PER_SEC)))
+        player.play()
     }
 }
