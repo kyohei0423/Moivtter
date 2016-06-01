@@ -30,10 +30,9 @@ class Moveet: NSObject {
         moveetObject.setObject(file, forKey: "videoFile")
         moveetObject.setObject(text, forKey: "text")
         moveetObject.saveInBackgroundWithBlock { (error) in
-            if error != nil {
-                print(error)
-            }
+            guard error == nil else { return }
             callback()
         }
     }
 }
+
