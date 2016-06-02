@@ -19,7 +19,8 @@ class PostViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        setTabBar()
+        let movitterTabBarController = self.tabBarController as! MovitterTabBarController
+        movitterTabBarController.hideTabBar()
     }
 
     override func viewDidLoad() {
@@ -60,11 +61,6 @@ class PostViewController: UIViewController {
     private func setNavigationItem() {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: #selector(PostViewController.tapBackButton))
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Post", style: .Plain, target: self, action: #selector(PostViewController.tapPostButton))
-    }
-    
-    private func setTabBar() {
-        self.tabBarController?.tabBar.hidden      = true
-        self.tabBarController?.tabBar.translucent = true
     }
     
     private func showAlert() {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		701D4762F9A49840C5B963AF /* Pods_Movitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEA1E00A866EE1736FC62E9 /* Pods_Movitter.framework */; };
+		E229CC451CFF21F800CEC153 /* MovitterTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E229CC441CFF21F800CEC153 /* MovitterTabBarController.swift */; };
 		E25C273D1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273A1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png */; };
 		E25C273E1CDDF0E8003C7C87 /* ShutterButton1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273B1CDDF0E8003C7C87 /* ShutterButton1@2x.png */; };
 		E25C273F1CDDF0E8003C7C87 /* outer2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		7BEA1E00A866EE1736FC62E9 /* Pods_Movitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC40C8FCADAF53D202CAED1 /* Pods-Movitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movitter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Movitter/Pods-Movitter.debug.xcconfig"; sourceTree = "<group>"; };
+		E229CC441CFF21F800CEC153 /* MovitterTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovitterTabBarController.swift; sourceTree = "<group>"; };
 		E25C273A1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutterButtonStop@2x.png"; sourceTree = "<group>"; };
 		E25C273B1CDDF0E8003C7C87 /* ShutterButton1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutterButton1@2x.png"; sourceTree = "<group>"; };
 		E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "outer2@2x.png"; sourceTree = "<group>"; };
@@ -113,6 +115,14 @@
 				FD43521EC50CB08FC10749F1 /* Pods-Movitter.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E229CC431CFF21CF00CEC153 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E229CC441CFF21F800CEC153 /* MovitterTabBarController.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		E25C27391CDDF0C5003C7C87 /* images */ = {
@@ -236,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				E2CD09951CD60390009CA778 /* Main.storyboard */,
+				E229CC431CFF21CF00CEC153 /* Common */,
 				E2AC89631CD9940C00B40234 /* Extension */,
 				E28806561CD78FAB005E5838 /* NavigationController */,
 				E2CD09A31CD6147D009CA778 /* MovieList */,
@@ -447,6 +458,7 @@
 				E2BAB9C31CE9F66200156708 /* MovieCollectionViewCell.swift in Sources */,
 				E27819631CF9D67D004C5B9C /* Moveet.swift in Sources */,
 				E2AC89711CDB110200B40234 /* TakeMovieViewModel.swift in Sources */,
+				E229CC451CFF21F800CEC153 /* MovitterTabBarController.swift in Sources */,
 				E2B616DD1CFA0E3A003C2FAC /* PostView.swift in Sources */,
 				E2CD09A71CD614A2009CA778 /* MovieListView.swift in Sources */,
 			);

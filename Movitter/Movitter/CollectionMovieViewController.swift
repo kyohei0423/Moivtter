@@ -33,7 +33,8 @@ class CollectionMovieViewController: UIViewController, UICollectionViewDelegate 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        setTabBar()
+        let movitterTabBarController = self.tabBarController as! MovitterTabBarController
+        movitterTabBarController.showTabBar()
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -72,11 +73,6 @@ class CollectionMovieViewController: UIViewController, UICollectionViewDelegate 
         
         let postVC = segue.destinationViewController as! PostViewController
         postVC.moveet.asset = selectedAsset
-    }
-
-    private func setTabBar() {
-        self.tabBarController?.tabBar.hidden = false
-        self.tabBarController?.tabBar.translucent = false
     }
     
     private func moveSettingApp() {
