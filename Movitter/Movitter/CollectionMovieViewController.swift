@@ -74,18 +74,6 @@ class CollectionMovieViewController: UIViewController, UICollectionViewDelegate 
         let postVC = segue.destinationViewController as! PostViewController
         postVC.moveet.asset = selectedAsset
     }
-    
-    private func moveSettingApp() {
-        let alertController = UIAlertController(title: "カメラロールへのアクセスが許可されていません", message: "設定アプリからカメラロールへのアクセスを許可してください", preferredStyle: .Alert)
-        let action = UIAlertAction(title: "設定する", style: .Default) { (_) in
-            let settingURL = NSURL(string: UIApplicationOpenSettingsURLString)
-            if let settingURL = settingURL {
-                UIApplication.sharedApplication().openURL(settingURL)
-            }
-        }
-        alertController.addAction(action)
-        presentViewController(alertController, animated: true, completion: nil)
-    }
 
     //delegate
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {

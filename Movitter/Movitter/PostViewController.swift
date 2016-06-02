@@ -54,7 +54,8 @@ class PostViewController: UIViewController {
                 self.dismissViewControllerAnimated(true, completion: nil)
             })
         } else {
-            showAlert()
+            let alertController = UIAlertController.errorAlert("コメントを入力してください")
+            self.presentViewController(alertController, animated: true, completion: nil)
         }
     }
     
@@ -62,14 +63,6 @@ class PostViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: #selector(PostViewController.tapBackButton))
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Post", style: .Plain, target: self, action: #selector(PostViewController.tapPostButton))
     }
-    
-    private func showAlert() {
-        let alertVC = UIAlertController(title: "エラー", message: "コメントが入力されていません", preferredStyle: .Alert)
-        let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
-        alertVC.addAction(action)
-        self.presentViewController(alertVC, animated: true, completion: nil)
-    }
-    
 
     /*
     // MARK: - Navigation

@@ -43,7 +43,8 @@ class TakeMovieViewController: UIViewController, AVCaptureFileOutputRecordingDel
                 takeMovieViewModel.begin()
             }
         } else {
-            moveSettingApp()
+            let alertController = UIAlertController.moveSetting("カメラへのアクセスが許可されていません", message: "設定アプリからカメラへのアクセスを許可してください")
+            self.presentViewController(alertController, animated: true, completion: nil)
         }
     }
 
@@ -59,19 +60,6 @@ class TakeMovieViewController: UIViewController, AVCaptureFileOutputRecordingDel
 
     func captureOutput(captureOutput: AVCaptureFileOutput!, didFinishRecordingToOutputFileAtURL outputFileURL: NSURL!, fromConnections connections: [AnyObject]!, error: NSError!) {
         takeMovieViewModel.finishRecord(outputFileURL)
-    }
-
-
-    private func moveSettingApp() {
-        let alertController = UIAlertController(title: "カメラへのアクセスが許可されていません", message: "設定アプリからカメラへのアクセスを許可してください", preferredStyle: .Alert)
-        let action = UIAlertAction(title: "設定する", style: .Default) { (_) in
-            let settingURL = NSURL(string: UIApplicationOpenSettingsURLString)
-            if let settingURL = settingURL {
-                UIApplication.sharedApplication().openURL(settingURL)
-            }
-        }
-        alertController.addAction(action)
-        presentViewController(alertController, animated: true, completion: nil)
     }
 
 

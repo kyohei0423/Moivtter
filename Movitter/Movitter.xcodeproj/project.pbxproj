@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		701D4762F9A49840C5B963AF /* Pods_Movitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEA1E00A866EE1736FC62E9 /* Pods_Movitter.framework */; };
 		E229CC451CFF21F800CEC153 /* MovitterTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E229CC441CFF21F800CEC153 /* MovitterTabBarController.swift */; };
+		E229CC471D00668500CEC153 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E229CC461D00668500CEC153 /* UIAlertController+Extension.swift */; };
 		E25C273D1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273A1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png */; };
 		E25C273E1CDDF0E8003C7C87 /* ShutterButton1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273B1CDDF0E8003C7C87 /* ShutterButton1@2x.png */; };
 		E25C273F1CDDF0E8003C7C87 /* outer2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */; };
@@ -49,6 +50,7 @@
 		7BEA1E00A866EE1736FC62E9 /* Pods_Movitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC40C8FCADAF53D202CAED1 /* Pods-Movitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movitter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Movitter/Pods-Movitter.debug.xcconfig"; sourceTree = "<group>"; };
 		E229CC441CFF21F800CEC153 /* MovitterTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovitterTabBarController.swift; sourceTree = "<group>"; };
+		E229CC461D00668500CEC153 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		E25C273A1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutterButtonStop@2x.png"; sourceTree = "<group>"; };
 		E25C273B1CDDF0E8003C7C87 /* ShutterButton1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutterButton1@2x.png"; sourceTree = "<group>"; };
 		E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "outer2@2x.png"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				E2AC89661CD99DFE00B40234 /* TableView+Extension.swift */,
 				E2BAB9BC1CE9EA0300156708 /* UICollectionViewFlowLayout+Extension.swift */,
 				E2BAB9BE1CE9EC9600156708 /* UICollectionView+Extension.swift */,
+				E229CC461D00668500CEC153 /* UIAlertController+Extension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				E2BAB9C81CEDE6A400156708 /* CommonNavigationController.swift in Sources */,
 				E2AC896A1CDAFA6D00B40234 /* TakeMovieViewController.swift in Sources */,
 				E2CD09A91CD614B3009CA778 /* MovieListViewController.swift in Sources */,
+				E229CC471D00668500CEC153 /* UIAlertController+Extension.swift in Sources */,
 				E2AC89671CD99DFE00B40234 /* TableView+Extension.swift in Sources */,
 				E2CD09921CD60390009CA778 /* AppDelegate.swift in Sources */,
 				E2BAB9C61CEA059100156708 /* CollectionMovieViewModel.swift in Sources */,
