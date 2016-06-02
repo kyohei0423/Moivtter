@@ -26,7 +26,7 @@ class MovitterTabBarController: UITabBarController {
         self.tabBarController?.tabBar.translucent = false
     }
 
-    func hidTabBar() {
+    func hideTabBar() {
         self.tabBarController?.tabBar.hidden = true
         self.tabBarController?.tabBar.translucent = true
     }
