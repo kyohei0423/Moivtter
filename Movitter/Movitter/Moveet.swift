@@ -13,8 +13,7 @@ import NCMB
 class Moveet: NSObject {
     var asset: AVAsset!
     var text: String!
-    
-    func validation() -> Bool {
+    var validation: Bool {
         if text.characters.count != 0 {
             return true
         } else {

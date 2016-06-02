@@ -49,7 +49,7 @@ class PostViewController: UIViewController {
         let postView = view as! PostView
         moveet.text = postView.commentTextView.text
         print(postView.commentTextView.text)
-        if moveet.validation() {
+        if moveet.validation {
             moveet.save({ 
                 self.dismissViewControllerAnimated(true, completion: nil)
             })
