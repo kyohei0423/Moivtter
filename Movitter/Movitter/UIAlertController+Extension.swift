@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 extension UIAlertController {
-    class func moveSetting(title: String, message: String) -> UIAlertController {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+    class func moveSetting(title: String) -> UIAlertController {
+        let alertController = UIAlertController(title: title, message: "設定アプリからカメラへのアクセスを許可してください", preferredStyle: .Alert)
         let action = UIAlertAction(title: "設定する", style: .Default) { (_) in
             let settingURL = NSURL(string: UIApplicationOpenSettingsURLString)
             if let settingURL = settingURL {

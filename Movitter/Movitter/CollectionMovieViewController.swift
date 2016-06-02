@@ -60,7 +60,8 @@ class CollectionMovieViewController: UIViewController, UICollectionViewDelegate 
                 })
             }
         } else {
-            moveSettingApp()
+            let alertController = UIAlertController.moveSetting("カメラロールへのアクセスが許可されていません")
+            self.presentViewController(alertController, animated: true, completion: nil)
         }
     }
     
