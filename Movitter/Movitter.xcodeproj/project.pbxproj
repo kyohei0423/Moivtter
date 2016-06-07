@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		701D4762F9A49840C5B963AF /* Pods_Movitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEA1E00A866EE1736FC62E9 /* Pods_Movitter.framework */; };
+		E21260611D018C440071F50E /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21260601D018C440071F50E /* ErrorMessage.swift */; };
+		E229CC451CFF21F800CEC153 /* MovitterTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E229CC441CFF21F800CEC153 /* MovitterTabBarController.swift */; };
+		E229CC471D00668500CEC153 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E229CC461D00668500CEC153 /* UIAlertController+Extension.swift */; };
 		E25C273D1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273A1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png */; };
 		E25C273E1CDDF0E8003C7C87 /* ShutterButton1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273B1CDDF0E8003C7C87 /* ShutterButton1@2x.png */; };
 		E25C273F1CDDF0E8003C7C87 /* outer2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */; };
+		E27819631CF9D67D004C5B9C /* Moveet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27819621CF9D67D004C5B9C /* Moveet.swift */; };
+		E27819841CFA03FD004C5B9C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27819831CFA03FD004C5B9C /* PostViewController.swift */; };
 		E288065C1CD7AE9A005E5838 /* movie.png in Resources */ = {isa = PBXBuildFile; fileRef = E288065B1CD7AE9A005E5838 /* movie.png */; };
 		E288065E1CD7B168005E5838 /* select.png in Resources */ = {isa = PBXBuildFile; fileRef = E288065D1CD7B168005E5838 /* select.png */; };
 		E2AC89651CD996C400B40234 /* UINib+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC89641CD996C400B40234 /* UINib+Extension.swift */; };
@@ -19,6 +24,8 @@
 		E2AC896C1CDAFA9100B40234 /* TakeMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC896B1CDAFA9100B40234 /* TakeMovieView.swift */; };
 		E2AC896F1CDAFAAB00B40234 /* TakeMovieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2AC896E1CDAFAAB00B40234 /* TakeMovieView.xib */; };
 		E2AC89711CDB110200B40234 /* TakeMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AC89701CDB110200B40234 /* TakeMovieViewModel.swift */; };
+		E2B616DD1CFA0E3A003C2FAC /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B616DC1CFA0E3A003C2FAC /* PostView.swift */; };
+		E2B616DF1CFA0E4D003C2FAC /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2B616DE1CFA0E4D003C2FAC /* PostView.xib */; };
 		E2BAB9B71CE9E1A400156708 /* CollectionMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAB9B61CE9E1A400156708 /* CollectionMovieView.swift */; };
 		E2BAB9B91CE9E1D500156708 /* CollectionMovieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BAB9B81CE9E1D500156708 /* CollectionMovieView.xib */; };
 		E2BAB9BB1CE9E20200156708 /* CollectionMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAB9BA1CE9E20200156708 /* CollectionMovieViewController.swift */; };
@@ -43,9 +50,14 @@
 /* Begin PBXFileReference section */
 		7BEA1E00A866EE1736FC62E9 /* Pods_Movitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC40C8FCADAF53D202CAED1 /* Pods-Movitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movitter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Movitter/Pods-Movitter.debug.xcconfig"; sourceTree = "<group>"; };
+		E21260601D018C440071F50E /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		E229CC441CFF21F800CEC153 /* MovitterTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovitterTabBarController.swift; sourceTree = "<group>"; };
+		E229CC461D00668500CEC153 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		E25C273A1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutterButtonStop@2x.png"; sourceTree = "<group>"; };
 		E25C273B1CDDF0E8003C7C87 /* ShutterButton1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutterButton1@2x.png"; sourceTree = "<group>"; };
 		E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "outer2@2x.png"; sourceTree = "<group>"; };
+		E27819621CF9D67D004C5B9C /* Moveet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moveet.swift; sourceTree = "<group>"; };
+		E27819831CFA03FD004C5B9C /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		E288065B1CD7AE9A005E5838 /* movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = movie.png; path = Movitter/movie.png; sourceTree = "<group>"; };
 		E288065D1CD7B168005E5838 /* select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = select.png; path = Movitter/select.png; sourceTree = "<group>"; };
 		E2AC89641CD996C400B40234 /* UINib+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINib+Extension.swift"; sourceTree = "<group>"; };
@@ -54,6 +66,8 @@
 		E2AC896B1CDAFA9100B40234 /* TakeMovieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeMovieView.swift; sourceTree = "<group>"; };
 		E2AC896E1CDAFAAB00B40234 /* TakeMovieView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TakeMovieView.xib; sourceTree = "<group>"; };
 		E2AC89701CDB110200B40234 /* TakeMovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeMovieViewModel.swift; sourceTree = "<group>"; };
+		E2B616DC1CFA0E3A003C2FAC /* PostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		E2B616DE1CFA0E4D003C2FAC /* PostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostView.xib; sourceTree = "<group>"; };
 		E2BAB9B61CE9E1A400156708 /* CollectionMovieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionMovieView.swift; sourceTree = "<group>"; };
 		E2BAB9B81CE9E1D500156708 /* CollectionMovieView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionMovieView.xib; sourceTree = "<group>"; };
 		E2BAB9BA1CE9E20200156708 /* CollectionMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionMovieViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +121,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E212605F1D018C2B0071F50E /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				E21260601D018C440071F50E /* ErrorMessage.swift */,
+			);
+			name = Structure;
+			sourceTree = "<group>";
+		};
+		E229CC431CFF21CF00CEC153 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E229CC441CFF21F800CEC153 /* MovitterTabBarController.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		E25C27391CDDF0C5003C7C87 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +147,15 @@
 				E25C273C1CDDF0E8003C7C87 /* outer2@2x.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		E27819821CFA03D3004C5B9C /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				E2B616DB1CFA0E21003C2FAC /* PostView */,
+				E27819831CFA03FD004C5B9C /* PostViewController.swift */,
+			);
+			name = Post;
 			sourceTree = "<group>";
 		};
 		E28806561CD78FAB005E5838 /* NavigationController */ = {
@@ -135,6 +174,7 @@
 				E2AC89661CD99DFE00B40234 /* TableView+Extension.swift */,
 				E2BAB9BC1CE9EA0300156708 /* UICollectionViewFlowLayout+Extension.swift */,
 				E2BAB9BE1CE9EC9600156708 /* UICollectionView+Extension.swift */,
+				E229CC461D00668500CEC153 /* UIAlertController+Extension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -156,6 +196,15 @@
 				E2AC89701CDB110200B40234 /* TakeMovieViewModel.swift */,
 			);
 			name = TakeMovieView;
+			sourceTree = "<group>";
+		};
+		E2B616DB1CFA0E21003C2FAC /* PostView */ = {
+			isa = PBXGroup;
+			children = (
+				E2B616DC1CFA0E3A003C2FAC /* PostView.swift */,
+				E2B616DE1CFA0E4D003C2FAC /* PostView.xib */,
+			);
+			name = PostView;
 			sourceTree = "<group>";
 		};
 		E2BAB9B41CE9E0F600156708 /* CollectionMovie */ = {
@@ -210,15 +259,19 @@
 			isa = PBXGroup;
 			children = (
 				E2CD09951CD60390009CA778 /* Main.storyboard */,
+				E212605F1D018C2B0071F50E /* Structure */,
 				E2AC89631CD9940C00B40234 /* Extension */,
+				E229CC431CFF21CF00CEC153 /* Common */,
 				E28806561CD78FAB005E5838 /* NavigationController */,
 				E2CD09A31CD6147D009CA778 /* MovieList */,
 				E2AC89681CDAFA4900B40234 /* TakeMovie */,
 				E2BAB9B41CE9E0F600156708 /* CollectionMovie */,
+				E27819821CFA03D3004C5B9C /* Post */,
 				E2CD09911CD60390009CA778 /* AppDelegate.swift */,
 				E2CD09981CD60390009CA778 /* Assets.xcassets */,
 				E2CD099A1CD60390009CA778 /* LaunchScreen.storyboard */,
 				E2CD099D1CD60390009CA778 /* Info.plist */,
+				E27819621CF9D67D004C5B9C /* Moveet.swift */,
 			);
 			path = Movitter;
 			sourceTree = "<group>";
@@ -264,6 +317,7 @@
 				E2CD098C1CD60390009CA778 /* Resources */,
 				B433B63CF3442850E297C05C /* 📦 Embed Pods Frameworks */,
 				F1DC5EB1FB504AB3A46CA670 /* 📦 Copy Pods Resources */,
+				79B8D4A9899AD05E9440145D /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,6 +377,7 @@
 				E2CD09A51CD61493009CA778 /* MovieListView.xib in Resources */,
 				E2BAB9B91CE9E1D500156708 /* CollectionMovieView.xib in Resources */,
 				E25C273F1CDDF0E8003C7C87 /* outer2@2x.png in Resources */,
+				E2B616DF1CFA0E4D003C2FAC /* PostView.xib in Resources */,
 				E2CD09991CD60390009CA778 /* Assets.xcassets in Resources */,
 				E25C273E1CDDF0E8003C7C87 /* ShutterButton1@2x.png in Resources */,
 				E2CD09971CD60390009CA778 /* Main.storyboard in Resources */,
@@ -345,6 +400,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		79B8D4A9899AD05E9440145D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Movitter/Pods-Movitter-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B433B63CF3442850E297C05C /* 📦 Embed Pods Frameworks */ = {
@@ -388,18 +458,24 @@
 				E2BAB9C81CEDE6A400156708 /* CommonNavigationController.swift in Sources */,
 				E2AC896A1CDAFA6D00B40234 /* TakeMovieViewController.swift in Sources */,
 				E2CD09A91CD614B3009CA778 /* MovieListViewController.swift in Sources */,
+				E229CC471D00668500CEC153 /* UIAlertController+Extension.swift in Sources */,
 				E2AC89671CD99DFE00B40234 /* TableView+Extension.swift in Sources */,
 				E2CD09921CD60390009CA778 /* AppDelegate.swift in Sources */,
 				E2BAB9C61CEA059100156708 /* CollectionMovieViewModel.swift in Sources */,
 				E2BAB9BD1CE9EA0300156708 /* UICollectionViewFlowLayout+Extension.swift in Sources */,
 				E2CD09AE1CD616E4009CA778 /* MovieListTableViewCell.swift in Sources */,
+				E21260611D018C440071F50E /* ErrorMessage.swift in Sources */,
 				E2BAB9BF1CE9EC9600156708 /* UICollectionView+Extension.swift in Sources */,
 				E2BAB9BB1CE9E20200156708 /* CollectionMovieViewController.swift in Sources */,
 				E2BAB9B71CE9E1A400156708 /* CollectionMovieView.swift in Sources */,
+				E27819841CFA03FD004C5B9C /* PostViewController.swift in Sources */,
 				E2AC89651CD996C400B40234 /* UINib+Extension.swift in Sources */,
 				E2AC896C1CDAFA9100B40234 /* TakeMovieView.swift in Sources */,
 				E2BAB9C31CE9F66200156708 /* MovieCollectionViewCell.swift in Sources */,
+				E27819631CF9D67D004C5B9C /* Moveet.swift in Sources */,
 				E2AC89711CDB110200B40234 /* TakeMovieViewModel.swift in Sources */,
+				E229CC451CFF21F800CEC153 /* MovitterTabBarController.swift in Sources */,
+				E2B616DD1CFA0E3A003C2FAC /* PostView.swift in Sources */,
 				E2CD09A71CD614A2009CA778 /* MovieListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

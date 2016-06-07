@@ -13,7 +13,7 @@ import Async
 class CollectionMovieViewController: UIViewController, UICollectionViewDelegate {
 
     let collectionMovieViewModel = CollectionMovieViewModel()
-    var selectedAssets: AVAsset!
+    var selectedAsset: AVAsset!
 
     override func loadView() {
         super.loadView()
@@ -22,9 +22,19 @@ class CollectionMovieViewController: UIViewController, UICollectionViewDelegate 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .Plain, target: self, action: #selector(CollectionMovieViewController.tapNextButton))
+        
         let collectionMovieView = view as! CollectionMovieView
         collectionMovieView.movieCollectionView.delegate = self
         collectionMovieView.movieCollectionView.dataSource = collectionMovieViewModel
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let movitterTabBarController = self.tabBarController as! MovitterTabBarController
+        movitterTabBarController.showTabBar()
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -50,27 +60,27 @@ class CollectionMovieViewController: UIViewController, UICollectionViewDelegate 
                 })
             }
         } else {
-            moveSettingApp()
+            let alertController = UIAlertController.moveSetting(ErrorMessage.unauhtorizedCameraroll)
+            self.presentViewController(alertController, animated: true, completion: nil)
         }
     }
-
-    private func moveSettingApp() {
-        let alertController = UIAlertController(title: "カメラロールへのアクセスが許可されていません", message: "設定アプリからカメラロールへのアクセスを許可してください", preferredStyle: .Alert)
-        let action = UIAlertAction(title: "設定する", style: .Default) { (_) in
-            let settingURL = NSURL(string: UIApplicationOpenSettingsURLString)
-            if let settingURL = settingURL {
-                UIApplication.sharedApplication().openURL(settingURL)
-            }
-        }
-        alertController.addAction(action)
-        presentViewController(alertController, animated: true, completion: nil)
+    
+    func tapNextButton() {
+        performSegueWithIdentifier("ShowPostViewController", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
+        
+        let postVC = segue.destinationViewController as! PostViewController
+        postVC.moveet.asset = selectedAsset
     }
 
     //delegate
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        selectedAssets = self.collectionMovieViewModel.avAssets[indexPath.row]
+        selectedAsset = self.collectionMovieViewModel.avAssets[indexPath.row]
         let collectionMovieView = self.view as! CollectionMovieView
-        collectionMovieView.drawMovieView(selectedAssets!)
+        collectionMovieView.drawMovieView(selectedAsset!)
     }
 
 
