@@ -43,7 +43,7 @@ class TakeMovieViewController: UIViewController, AVCaptureFileOutputRecordingDel
                 takeMovieViewModel.begin()
             }
         } else {
-            let alertController = UIAlertController.moveSetting("カメラへのアクセスが許可されていません")
+            let alertController = UIAlertController.moveSetting(ErrorMessage.unauthorizedCamera)
             self.presentViewController(alertController, animated: true, completion: nil)
         }
     }

@@ -54,7 +54,7 @@ class PostViewController: UIViewController {
                 self.dismissViewControllerAnimated(true, completion: nil)
             })
         } else {
-            let alertController = UIAlertController.errorAlert("コメントを入力してください")
+            let alertController = UIAlertController.errorAlert(ErrorMessage.emptyComment)
             self.presentViewController(alertController, animated: true, completion: nil)
         }
     }

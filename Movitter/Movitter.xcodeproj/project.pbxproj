@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		701D4762F9A49840C5B963AF /* Pods_Movitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEA1E00A866EE1736FC62E9 /* Pods_Movitter.framework */; };
+		E21260611D018C440071F50E /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21260601D018C440071F50E /* ErrorMessage.swift */; };
 		E229CC451CFF21F800CEC153 /* MovitterTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E229CC441CFF21F800CEC153 /* MovitterTabBarController.swift */; };
 		E229CC471D00668500CEC153 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E229CC461D00668500CEC153 /* UIAlertController+Extension.swift */; };
 		E25C273D1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C273A1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		7BEA1E00A866EE1736FC62E9 /* Pods_Movitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC40C8FCADAF53D202CAED1 /* Pods-Movitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movitter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Movitter/Pods-Movitter.debug.xcconfig"; sourceTree = "<group>"; };
+		E21260601D018C440071F50E /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		E229CC441CFF21F800CEC153 /* MovitterTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovitterTabBarController.swift; sourceTree = "<group>"; };
 		E229CC461D00668500CEC153 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		E25C273A1CDDF0E8003C7C87 /* ShutterButtonStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutterButtonStop@2x.png"; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 				FD43521EC50CB08FC10749F1 /* Pods-Movitter.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E212605F1D018C2B0071F50E /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				E21260601D018C440071F50E /* ErrorMessage.swift */,
+			);
+			name = Structure;
 			sourceTree = "<group>";
 		};
 		E229CC431CFF21CF00CEC153 /* Common */ = {
@@ -249,8 +259,9 @@
 			isa = PBXGroup;
 			children = (
 				E2CD09951CD60390009CA778 /* Main.storyboard */,
-				E229CC431CFF21CF00CEC153 /* Common */,
+				E212605F1D018C2B0071F50E /* Structure */,
 				E2AC89631CD9940C00B40234 /* Extension */,
+				E229CC431CFF21CF00CEC153 /* Common */,
 				E28806561CD78FAB005E5838 /* NavigationController */,
 				E2CD09A31CD6147D009CA778 /* MovieList */,
 				E2AC89681CDAFA4900B40234 /* TakeMovie */,
@@ -453,6 +464,7 @@
 				E2BAB9C61CEA059100156708 /* CollectionMovieViewModel.swift in Sources */,
 				E2BAB9BD1CE9EA0300156708 /* UICollectionViewFlowLayout+Extension.swift in Sources */,
 				E2CD09AE1CD616E4009CA778 /* MovieListTableViewCell.swift in Sources */,
+				E21260611D018C440071F50E /* ErrorMessage.swift in Sources */,
 				E2BAB9BF1CE9EC9600156708 /* UICollectionView+Extension.swift in Sources */,
 				E2BAB9BB1CE9E20200156708 /* CollectionMovieViewController.swift in Sources */,
 				E2BAB9B71CE9E1A400156708 /* CollectionMovieView.swift in Sources */,
